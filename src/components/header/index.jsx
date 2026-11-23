@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
@@ -12,14 +12,14 @@ function Header() {
     const getPrimaryLinkClassName = ({ isActive }) =>
         isActive ? `${styles.primaryLink} ${styles.active}` : styles.primaryLink;
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (!isMenuOpen) {
             return undefined;
         }
 
         const menuButton = menuButtonRef.current;
-        const previousBodyOverflow = document.body.style.overflow;
-        document.body.style.overflow = "hidden";
+        const previousDocumentOverflow = document.documentElement.style.overflow;
+        document.documentElement.style.overflow = "hidden";
         closeButtonRef.current?.focus();
 
         function handleKeyDown(event) {
@@ -56,7 +56,7 @@ function Header() {
         document.addEventListener("keydown", handleKeyDown);
 
         return () => {
-            document.body.style.overflow = previousBodyOverflow;
+            document.documentElement.style.overflow = previousDocumentOverflow;
             document.removeEventListener("keydown", handleKeyDown);
             menuButton?.focus();
         };
