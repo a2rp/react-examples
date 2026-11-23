@@ -57,6 +57,17 @@
             }
         }
 
+        .headerActions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-left: auto;
+
+            @media (max-width: 520px) {
+                gap: 8px;
+            }
+        }
+
         .primaryNavigation {
             display: flex;
             align-items: center;

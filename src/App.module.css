@@ -4,16 +4,17 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
 
-.routes {
-    min-height: 100vh;
-    flex: 1;
-    padding-top: var(--header-height);
-}
-
-@media (max-width: 520px) {
-    .app {
+    @media (max-width: 520px) {
         --header-height: 69px;
+    }
+
+    .routes {
+        width: 100%;
+        max-width: 1440px;
+        min-height: 100vh;
+        margin-inline: auto;
+        flex: 1;
+        padding-top: var(--header-height);
     }
 }

@@ -82,32 +82,34 @@ function Header() {
                     <span>React Examples</span>
                 </NavLink>
 
-                <nav className={styles.primaryNavigation} aria-label="Main navigation">
-                    <NavLink to="/" end className={getPrimaryLinkClassName}>
-                        Home
-                    </NavLink>
-                    <NavLink to="/about" className={getPrimaryLinkClassName}>
-                        About
-                    </NavLink>
-                    <NavLink to="/contact" className={getPrimaryLinkClassName}>
-                        Contact
-                    </NavLink>
-                    <NavLink to="/apps" className={getPrimaryLinkClassName}>
-                        Apps
-                    </NavLink>
-                </nav>
+                <div className={styles.headerActions}>
+                    <nav className={styles.primaryNavigation} aria-label="Main navigation">
+                        <NavLink to="/" end className={getPrimaryLinkClassName}>
+                            Home
+                        </NavLink>
+                        <NavLink to="/about" className={getPrimaryLinkClassName}>
+                            About
+                        </NavLink>
+                        <NavLink to="/contact" className={getPrimaryLinkClassName}>
+                            Contact
+                        </NavLink>
+                        <NavLink to="/apps" className={getPrimaryLinkClassName}>
+                            Apps
+                        </NavLink>
+                    </nav>
 
-                <button
-                    ref={menuButtonRef}
-                    className={styles.menuButton}
-                    type="button"
-                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    aria-expanded={isMenuOpen}
-                    aria-controls="site-navigation-menu"
-                    onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
-                >
-                    {isMenuOpen ? <FiX aria-hidden="true" /> : <FiMenu aria-hidden="true" />}
-                </button>
+                    <button
+                        ref={menuButtonRef}
+                        className={styles.menuButton}
+                        type="button"
+                        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                        aria-expanded={isMenuOpen}
+                        aria-controls="site-navigation-menu"
+                        onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
+                    >
+                        {isMenuOpen ? <FiX aria-hidden="true" /> : <FiMenu aria-hidden="true" />}
+                    </button>
+                </div>
             </div>
 
             {isMenuOpen && (
