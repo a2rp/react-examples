@@ -1,10 +1,12 @@
 .footer {
+    width: 100%;
     border-top: 1px solid #292e36;
     color: #aab2bf;
 }
 
 .footerInner {
-    width: min(100% - 40px, 1080px);
+    width: 100%;
+    padding-inline: 20px;
     min-height: 68px;
     margin: 0 auto;
     display: flex;
@@ -15,9 +17,6 @@
 }
 
 .footerInner a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
     transition: color 160ms ease;
 }
 
@@ -25,14 +24,9 @@
     color: #ffffff;
 }
 
-.footerInner svg {
-    width: 16px;
-    height: 16px;
-}
-
 @media (max-width: 520px) {
     .footerInner {
-        width: min(100% - 28px, 1080px);
+        padding-inline: 12px;
         min-height: 60px;
     }
 }
