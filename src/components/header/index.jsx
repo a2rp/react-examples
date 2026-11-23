@@ -9,8 +9,16 @@ function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.headerInner}>
-                <NavLink to="/" end className={styles.brand} aria-label="React Examples home">
-                    <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" />
+                <NavLink
+                    to="/"
+                    end
+                    className={styles.brand}
+                    aria-label="React Examples home"
+                >
+                    <img
+                        src={`${import.meta.env.BASE_URL}logo.png`}
+                        alt="Ashish Ranjan"
+                    />
                     <span>React Examples</span>
                 </NavLink>
 
