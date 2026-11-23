@@ -9,6 +9,8 @@ function Header() {
     const menuButtonRef = useRef(null);
     const closeButtonRef = useRef(null);
     const menuPanelRef = useRef(null);
+    const getPrimaryLinkClassName = ({ isActive }) =>
+        isActive ? `${styles.primaryLink} ${styles.active}` : styles.primaryLink;
 
     useEffect(() => {
         if (!isMenuOpen) {
@@ -80,6 +82,21 @@ function Header() {
                     <span>React Examples</span>
                 </NavLink>
 
+                <nav className={styles.primaryNavigation} aria-label="Main navigation">
+                    <NavLink to="/" end className={getPrimaryLinkClassName}>
+                        Home
+                    </NavLink>
+                    <NavLink to="/about" className={getPrimaryLinkClassName}>
+                        About
+                    </NavLink>
+                    <NavLink to="/contact" className={getPrimaryLinkClassName}>
+                        Contact
+                    </NavLink>
+                    <NavLink to="/apps" className={getPrimaryLinkClassName}>
+                        Apps
+                    </NavLink>
+                </nav>
+
                 <button
                     ref={menuButtonRef}
                     className={styles.menuButton}
@@ -130,6 +147,9 @@ function Header() {
                             </NavLink>
                             <NavLink to="/contact" className={styles.navLink} onClick={closeMenu}>
                                 Contact
+                            </NavLink>
+                            <NavLink to="/apps" className={styles.navLink} onClick={closeMenu}>
+                                Apps
                             </NavLink>
                         </nav>
                     </div>

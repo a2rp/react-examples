@@ -57,6 +57,35 @@
             }
         }
 
+        .primaryNavigation {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            @media (max-width: 760px) {
+                display: none;
+            }
+
+            .primaryLink {
+                padding: 10px 12px;
+                border-radius: 999px;
+                color: #aab2bf;
+                font-size: 0.9rem;
+                transition: background-color 160ms ease, color 160ms ease;
+
+                &:hover,
+                &.active {
+                    background: #252c35;
+                    color: #ffffff;
+                }
+
+                &:focus-visible {
+                    outline: 2px solid #a8c7ff;
+                    outline-offset: 3px;
+                }
+            }
+        }
+
         .menuButton {
             width: 42px;
             height: 42px;
