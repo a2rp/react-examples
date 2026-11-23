@@ -1,0 +1,46 @@
+.page {
+    max-width: 760px;
+    padding: clamp(72px, 12vw, 136px) 0;
+}
+
+.code {
+    color: #a8c7ff;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+}
+
+.page h1 {
+    margin-top: 18px;
+    color: #f4f6f8;
+    font-size: clamp(2.8rem, 7vw, 5.2rem);
+    letter-spacing: -0.06em;
+    line-height: 1;
+}
+
+.page p {
+    margin-top: 18px;
+    color: #adb6c2;
+    font-size: 1.05rem;
+}
+
+.page a {
+    width: fit-content;
+    margin-top: 30px;
+    padding: 11px 16px;
+    display: inline-flex;
+    border-radius: 10px;
+    background: #e3ecff;
+    color: #182234;
+    font-weight: 700;
+    transition: box-shadow 160ms ease;
+}
+
+.page a:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.page a:focus-visible {
+    outline: 2px solid #a8c7ff;
+    outline-offset: 3px;
+}

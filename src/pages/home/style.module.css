@@ -1,0 +1,70 @@
+.page {
+    padding: clamp(72px, 12vw, 136px) 0;
+}
+
+.eyebrow {
+    color: #a8c7ff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.page h1 {
+    max-width: 760px;
+    margin-top: 18px;
+    color: #f4f6f8;
+    font-size: clamp(2.8rem, 7vw, 5.6rem);
+    letter-spacing: -0.06em;
+    line-height: 1;
+}
+
+.intro {
+    max-width: 560px;
+    margin-top: 22px;
+    color: #adb6c2;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.emptyState {
+    max-width: 640px;
+    margin-top: 52px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid #303741;
+    border-radius: 16px;
+    background: #171c23;
+}
+
+.emptyState > svg {
+    flex: 0 0 auto;
+    width: 44px;
+    height: 44px;
+    padding: 11px;
+    border-radius: 12px;
+    background: #242d39;
+    color: #b7d0ff;
+}
+
+.emptyState h2 {
+    color: #f4f6f8;
+    font-size: 1rem;
+}
+
+.emptyState p {
+    margin-top: 5px;
+    color: #aab2bf;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+    .emptyState {
+        margin-top: 36px;
+        padding: 18px;
+        align-items: flex-start;
+    }
+}
