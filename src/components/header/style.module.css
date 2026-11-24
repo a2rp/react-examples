@@ -95,6 +95,102 @@
                     outline-offset: 3px;
                 }
             }
+
+            .primaryApps {
+                position: relative;
+                display: flex;
+                align-items: center;
+                border-radius: 999px;
+                transition: background-color 160ms ease;
+
+                &:hover,
+                &:focus-within,
+                &.primaryAppsOpen,
+                &.primaryAppsActive {
+                    background: #252c35;
+                }
+
+                .primaryLink {
+                    padding-right: 5px;
+                    border-radius: 999px 0 0 999px;
+                    background: transparent;
+
+                    &:hover,
+                    &.active {
+                        background: transparent;
+                        color: #ffffff;
+                    }
+                }
+
+                .primaryAppsToggle {
+                    min-height: 40px;
+                    padding: 10px 12px 10px 5px;
+                    display: grid;
+                    place-items: center;
+                    border: 0;
+                    border-radius: 0 999px 999px 0;
+                    background: transparent;
+                    color: #aab2bf;
+                    cursor: pointer;
+
+                    &:hover,
+                    &[aria-expanded="true"] {
+                        color: #ffffff;
+                    }
+
+                    &:focus-visible {
+                        outline: 2px solid #a8c7ff;
+                        outline-offset: 2px;
+                    }
+
+                    svg {
+                        width: 16px;
+                        height: 16px;
+                        transition: transform 160ms ease;
+                    }
+
+                    &[aria-expanded="true"] svg {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .primaryDropdown {
+                    position: absolute;
+                    top: calc(100% + 10px);
+                    right: 0;
+                    z-index: 1200;
+                    min-width: 200px;
+                    padding: 7px;
+                    border: 1px solid #292e36;
+                    border-radius: 12px;
+                    background: #0b0d11;
+                    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+
+                    &[hidden] {
+                        display: none;
+                    }
+
+                    .dropdownLink {
+                        padding: 12px 14px;
+                        display: block;
+                        border-radius: 8px;
+                        color: #aab2bf;
+                        font-size: 0.9rem;
+                        transition: background-color 160ms ease, color 160ms ease;
+
+                        &:hover,
+                        &[aria-current="page"] {
+                            background: #171c23;
+                            color: #ffffff;
+                        }
+
+                        &:focus-visible {
+                            outline: 2px solid #a8c7ff;
+                            outline-offset: 2px;
+                        }
+                    }
+                }
+            }
         }
 
         .menuButton {
@@ -200,13 +296,54 @@
                 }
             }
 
+            .menuSearch {
+                min-height: 46px;
+                margin-top: 20px;
+                padding: 0 13px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border: 1px solid #292e36;
+                border-radius: 10px;
+                background: #101318;
+                color: #aab2bf;
+                transition: border-color 160ms ease, background-color 160ms ease;
+
+                &:focus-within {
+                    border-color: #66778f;
+                    background: #12171e;
+                }
+
+                > svg {
+                    width: 18px;
+                    height: 18px;
+                    flex: 0 0 18px;
+                }
+
+                input {
+                    width: 100%;
+                    min-width: 0;
+                    padding: 0;
+                    border: 0;
+                    outline: 0;
+                    background: transparent;
+                    color: #f4f6f8;
+                    font-size: 0.9rem;
+
+                    &::placeholder {
+                        color: #77818f;
+                    }
+                }
+            }
+
             .menuList {
-                margin-top: 28px;
+                margin-top: 20px;
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
 
                 .navLink {
+                    flex: 1;
                     padding: 14px 16px;
                     border: 1px solid transparent;
                     border-radius: 10px;
@@ -224,6 +361,91 @@
                     &:focus-visible {
                         outline: 2px solid #a8c7ff;
                         outline-offset: 3px;
+                    }
+                }
+
+                .menuEmptyState {
+                    padding: 14px 16px;
+                    border: 1px solid #292e36;
+                    border-radius: 10px;
+                    color: #aab2bf;
+                    font-size: 0.9rem;
+                }
+
+                .menuApps {
+                    .menuAppsRow {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+
+                    .submenuToggle {
+                        width: 52px;
+                        min-height: 52px;
+                        flex: 0 0 52px;
+                        display: grid;
+                        place-items: center;
+                        border: 1px solid #292e36;
+                        border-radius: 10px;
+                        background: #101318;
+                        color: #aab2bf;
+                        cursor: pointer;
+                        transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+
+                        &:hover,
+                        &[aria-expanded="true"] {
+                            border-color: #66778f;
+                            background: #202631;
+                            color: #ffffff;
+                        }
+
+                        &:focus-visible {
+                            outline: 2px solid #a8c7ff;
+                            outline-offset: 3px;
+                        }
+
+                        svg {
+                            width: 18px;
+                            height: 18px;
+                            transition: transform 160ms ease;
+                        }
+
+                        &[aria-expanded="true"] svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .menuSubList {
+                        margin: 8px 0 0 16px;
+                        padding-left: 12px;
+                        display: flex;
+                        flex-direction: column;
+                        border-left: 1px solid #303741;
+
+                        &[hidden] {
+                            display: none;
+                        }
+
+                        .menuSubLink {
+                            padding: 12px 14px;
+                            border: 1px solid transparent;
+                            border-radius: 9px;
+                            color: #aab2bf;
+                            font-size: 0.9rem;
+                            transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+
+                            &:hover,
+                            &[aria-current="page"] {
+                                border-color: #292e36;
+                                background: #171c23;
+                                color: #ffffff;
+                            }
+
+                            &:focus-visible {
+                                outline: 2px solid #a8c7ff;
+                                outline-offset: 3px;
+                            }
+                        }
                     }
                 }
             }
