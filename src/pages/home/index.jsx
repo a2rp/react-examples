@@ -1,24 +1,9 @@
-import { FiArrowDownRight, FiArrowUpRight, FiGithub, FiLayers, FiZap } from "react-icons/fi";
+import { FiArrowDownRight, FiArrowUpRight, FiGithub, FiLayers } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
+import AppCard from "../../components/app-card";
+import apps from "../../data/apps";
 import styles from "./style.module.css";
-
-const demos = [
-    {
-        title: "Accordion",
-        description: "A clear, single-open FAQ interaction.",
-        to: "/apps/accordion",
-        icon: FiLayers,
-        number: "01",
-    },
-    {
-        title: "Accordion Pro",
-        description: "Persistent panels with flexible controls.",
-        to: "/apps/accordion-pro",
-        icon: FiZap,
-        number: "02",
-    },
-];
 
 function HomePage() {
     return (
@@ -84,19 +69,7 @@ function HomePage() {
                 </div>
 
                 <div className={styles.demoGrid}>
-                    {demos.map(({ title, description, to, icon: Icon, number }) => (
-                        <Link className={styles.demoCard} key={title} to={to}>
-                            <span className={styles.demoNumber}>{number}</span>
-                            <span className={styles.demoIcon}>
-                                <Icon aria-hidden="true" />
-                            </span>
-                            <span className={styles.demoDetails}>
-                                <strong>{title}</strong>
-                                <span>{description}</span>
-                            </span>
-                            <FiArrowUpRight className={styles.demoArrow} aria-hidden="true" />
-                        </Link>
-                    ))}
+                    {apps.map((app) => <AppCard key={app.title} app={app} />)}
                 </div>
             </section>
         </div>

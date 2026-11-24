@@ -1,0 +1,209 @@
+.card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    background: rgba(12, 16, 23, 0.82);
+    text-decoration: none;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+
+    &:hover {
+        border-color: rgba(168, 199, 255, 0.4);
+        box-shadow: 0 24px 52px rgba(0, 0, 0, 0.28);
+    }
+
+    &:focus-visible {
+        outline: 2px solid #a8c7ff;
+        outline-offset: 4px;
+    }
+
+    .visual {
+        position: relative;
+        height: clamp(190px, 23vw, 270px);
+        overflow: hidden;
+        background: #101721;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 220ms ease;
+        }
+
+        .visualShade {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(5, 8, 13, 0.2) 0%,
+                rgba(5, 8, 13, 0.02) 40%,
+                rgba(5, 8, 13, 0.66) 100%
+            );
+        }
+
+        .number,
+        .category {
+            position: absolute;
+            top: 16px;
+            display: inline-flex;
+            min-height: 29px;
+            align-items: center;
+            padding: 0 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 999px;
+            background: rgba(8, 11, 17, 0.62);
+            color: #f0f3f8;
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            backdrop-filter: blur(12px);
+        }
+
+        .category {
+            left: 16px;
+            color: #dce8ff;
+        }
+
+        .number {
+            right: 16px;
+            color: #fff;
+        }
+
+        .icon {
+            position: absolute;
+            right: 19px;
+            bottom: 17px;
+            display: grid;
+            width: 46px;
+            height: 46px;
+            place-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 15px;
+            background: rgba(8, 11, 17, 0.55);
+            color: #e4edff;
+            backdrop-filter: blur(12px);
+
+            svg {
+                width: 21px;
+                height: 21px;
+            }
+        }
+    }
+
+    &:hover .visual img {
+        filter: saturate(1.08) brightness(1.04);
+    }
+
+    .content {
+        padding: clamp(20px, 2.7vw, 29px);
+
+        .eyebrow {
+            color: #a8c7ff;
+            font-size: 0.64rem;
+            font-weight: 750;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            margin-top: 9px;
+            color: #f4f6f8;
+            font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+            letter-spacing: -0.055em;
+        }
+
+        > p {
+            max-width: 470px;
+            min-height: 48px;
+            margin-top: 10px;
+            color: #aab4c3;
+            font-size: 0.86rem;
+            line-height: 1.65;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 18px;
+
+            li {
+                display: inline-flex;
+                min-height: 30px;
+                align-items: center;
+                gap: 6px;
+                padding: 0 9px;
+                border: 1px solid rgba(255, 255, 255, 0.09);
+                border-radius: 999px;
+                background: rgba(255, 255, 255, 0.035);
+                color: #c4ccd8;
+                font-size: 0.65rem;
+
+                svg {
+                    width: 12px;
+                    height: 12px;
+                    color: #9fc1ff;
+                }
+            }
+        }
+
+        .action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 22px;
+            color: #dce8ff;
+            font-size: 0.78rem;
+            font-weight: 750;
+
+            svg {
+                width: 16px;
+                height: 16px;
+                transition: color 160ms ease;
+            }
+        }
+    }
+
+    &:hover .action svg {
+        color: #fff;
+    }
+
+    @media (max-width: 560px) {
+        border-radius: 17px;
+
+        .visual {
+            height: clamp(185px, 60vw, 250px);
+
+            .number,
+            .category {
+                top: 12px;
+            }
+
+            .category {
+                left: 12px;
+            }
+
+            .number {
+                right: 12px;
+            }
+        }
+
+        .content {
+            padding: 19px 17px 20px;
+
+            > p {
+                min-height: 0;
+                font-size: 0.82rem;
+            }
+
+            .features {
+                gap: 6px;
+
+                li {
+                    font-size: 0.62rem;
+                }
+            }
+        }
+    }
+}
