@@ -5,6 +5,24 @@
     display: flex;
     flex-direction: column;
 
+    background:
+        radial-gradient(
+            ellipse at 12% 4%,
+            rgba(37, 99, 235, 0.2),
+            transparent 34%
+        ),
+        radial-gradient(
+            ellipse at 88% 18%,
+            rgba(124, 58, 237, 0.15),
+            transparent 38%
+        ),
+        radial-gradient(
+            ellipse at 50% 78%,
+            rgba(14, 165, 233, 0.08),
+            transparent 46%
+        ),
+        linear-gradient(145deg, #080b12 0%, #050608 52%, #09070e 100%);
+
     @media (max-width: 520px) {
         --header-height: 69px;
     }

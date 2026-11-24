@@ -3,10 +3,6 @@
     overflow: hidden;
     isolation: isolate;
     color: #f5f5f5;
-    background:
-        radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 28%),
-        radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.035), transparent 32%),
-        linear-gradient(180deg, #0b0b0b 0%, #080808 45%, #050505 100%);
 
     .accordion {
         padding: 20px 0 80px;
