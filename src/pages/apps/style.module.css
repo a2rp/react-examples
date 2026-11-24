@@ -30,6 +30,8 @@
     .appList {
         max-width: 760px;
         margin-top: 44px;
+        display: grid;
+        gap: 16px;
 
         .appCard {
             min-height: 124px;
@@ -42,6 +44,7 @@
             background: #101318;
             box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
             transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+            text-decoration: none;
 
             &:hover {
                 border-color: #66778f;

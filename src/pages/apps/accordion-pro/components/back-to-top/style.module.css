@@ -1,0 +1,35 @@
+.button {
+    position: fixed;
+    z-index: 40;
+    right: clamp(16px, 4vw, 44px);
+    bottom: 76px;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border: 1px solid rgba(168, 184, 255, 0.4);
+    border-radius: 50%;
+    background: rgba(18, 22, 30, 0.9);
+    color: #a8b8ff;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px);
+    transition: opacity 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+    backdrop-filter: blur(12px);
+
+    &.visible {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    &:hover {
+        box-shadow: 0 10px 24px rgba(148, 167, 255, 0.2);
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+}
