@@ -1,4 +1,4 @@
-import { FiArrowDownRight, FiArrowUpRight, FiLayers, FiZap } from "react-icons/fi";
+import { FiArrowDownRight, FiArrowUpRight, FiGithub, FiLayers, FiZap } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 import styles from "./style.module.css";
@@ -39,9 +39,14 @@ function HomePage() {
                         <Link className={styles.primaryAction} to="/apps">
                             Explore apps <FiArrowUpRight aria-hidden="true" />
                         </Link>
-                        <Link className={styles.secondaryAction} to="/about">
-                            About the project
-                        </Link>
+                        <a
+                            className={styles.secondaryAction}
+                            href="https://github.com/a2rp/react-examples"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FiGithub aria-hidden="true" /> GitHub repository
+                        </a>
                     </div>
                 </div>
 
