@@ -1,1 +1,0 @@
-import{r as e}from"./index-B3js1NUA.js";var t={page:`_page_108ym_1`,eyebrow:`_eyebrow_108ym_5`},n=e();function r(){return(0,n.jsxs)(`section`,{className:t.page,children:[(0,n.jsx)(`span`,{className:t.eyebrow,children:`Apps`}),(0,n.jsx)(`h1`,{children:`React apps, in one place.`}),(0,n.jsx)(`p`,{children:`Interactive examples will appear here.`})]})}export{r as default};
