@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 import styles from "./style.module.css";
 
-function AppCard({ app }) {
+function AppCard({ app, featured = false }) {
     const { number, level, title, description, image, imageAlt, icon: Icon, to, features, action } = app;
+    const className = featured
+        ? `${styles.card} ${styles.featured}`
+        : styles.card;
 
     return (
-        <Link className={styles.card} to={to}>
+        <Link className={className} to={to}>
             <div className={styles.visual}>
                 <img src={image} alt={imageAlt} loading="lazy" />
                 <span className={styles.visualShade} aria-hidden="true" />

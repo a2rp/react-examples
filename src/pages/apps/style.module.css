@@ -286,8 +286,130 @@
 
         .appGrid {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 18px;
+            max-width: 1120px;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 16px;
+            margin-inline: auto;
+            scroll-margin-top: calc(var(--header-height, 77px) + 24px);
+        }
+
+        .pagination {
+            display: flex;
+            max-width: 1120px;
+            min-height: 76px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 16px auto 0;
+            padding: 12px 15px 12px 19px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            background: rgba(12, 16, 23, 0.68);
+
+            .paginationInfo {
+                display: flex;
+                min-width: 0;
+                align-items: center;
+                gap: 8px;
+
+                .paginationLabel {
+                    color: #8f9caf;
+                    font-size: 0.7rem;
+                }
+
+                strong {
+                    color: #f4f6f8;
+                    font-size: 0.84rem;
+                    font-variant-numeric: tabular-nums;
+                }
+
+                > span:not(.paginationLabel) {
+                    color: #aab4c3;
+                    font-size: 0.72rem;
+                    white-space: nowrap;
+                }
+
+                .progressTrack {
+                    width: clamp(64px, 12vw, 132px);
+                    height: 4px;
+                    overflow: hidden;
+                    margin-left: 8px;
+                    border-radius: 999px;
+                    background: rgba(255, 255, 255, 0.1);
+
+                    .progressFill {
+                        display: block;
+                        height: 100%;
+                        border-radius: inherit;
+                        background: #a8c7ff;
+                        transition: width 220ms ease;
+                    }
+                }
+            }
+
+            .paginationControls {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                .pageArrow,
+                .pageNumber {
+                    display: inline-flex;
+                    min-width: 38px;
+                    min-height: 38px;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    padding: 0 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 11px;
+                    background: rgba(255, 255, 255, 0.025);
+                    color: #c5cedb;
+                    font: inherit;
+                    font-size: 0.72rem;
+                    font-weight: 650;
+                    cursor: pointer;
+                    transition: border-color 160ms ease, box-shadow 160ms ease;
+
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                    }
+
+                    &:hover:not(:disabled) {
+                        border-color: rgba(168, 199, 255, 0.4);
+                        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                    }
+
+                    &:focus-visible {
+                        outline: 2px solid #a8c7ff;
+                        outline-offset: 3px;
+                    }
+
+                    &:disabled {
+                        color: #657184;
+                        cursor: not-allowed;
+                        opacity: 0.65;
+                    }
+                }
+
+                .pageNumbers {
+                    display: flex;
+                    gap: 5px;
+
+                    .pageNumber {
+                        min-width: 38px;
+                        padding-inline: 8px;
+                        font-variant-numeric: tabular-nums;
+
+                        &[aria-current="page"] {
+                            border-color: rgba(168, 199, 255, 0.3);
+                            background: rgba(168, 199, 255, 0.13);
+                            color: #e6efff;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -316,7 +438,27 @@
     @media (max-width: 700px) {
         .collection {
             .appGrid {
-                grid-template-columns: minmax(0, 1fr);
+                gap: 13px;
+            }
+
+            .pagination {
+                align-items: stretch;
+                flex-direction: column;
+                gap: 12px;
+                padding: 15px;
+
+                .paginationInfo {
+                    justify-content: center;
+
+                    .progressTrack {
+                        flex: 1;
+                        max-width: 180px;
+                    }
+                }
+
+                .paginationControls {
+                    justify-content: space-between;
+                }
             }
         }
     }
@@ -387,6 +529,19 @@
 
             .appGrid {
                 gap: 13px;
+            }
+
+            .pagination {
+                .paginationControls {
+                    .pageArrow {
+                        min-width: 38px;
+                        padding-inline: 9px;
+
+                        span {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }
