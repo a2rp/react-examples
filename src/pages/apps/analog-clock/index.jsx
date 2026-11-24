@@ -70,7 +70,6 @@ function AnalogClockPage() {
         <main className={styles.page}>
             <section className={styles.clockSection}>
                 <header className={styles.header}>
-                    <p className={styles.label}>a2rp</p>
                     <h1 className={styles.title}>Analog Clock</h1>
                     <p className={styles.description}>
                         A smooth real-time clock with your local time and date.

@@ -28,10 +28,13 @@ function Header() {
     const showApps =
         matchesMenuLink("Apps") ||
         matchesMenuLink("Accordion") ||
-        matchesMenuLink("Accordion Pro");
+        matchesMenuLink("Accordion Pro") ||
+        matchesMenuLink("Analog Clock");
     const showAccordion = matchesMenuLink("Apps") || matchesMenuLink("Accordion");
     const showAccordionPro =
         matchesMenuLink("Apps") || matchesMenuLink("Accordion Pro");
+    const showAnalogClock =
+        matchesMenuLink("Apps") || matchesMenuLink("Analog Clock");
     const menuAppsExpanded = normalizedSearchTerm
         ? showApps
         : isAppsExpanded;
@@ -215,6 +218,13 @@ function Header() {
                                 >
                                     Accordion Pro
                                 </NavLink>
+                                <NavLink
+                                    to="/apps/analog-clock"
+                                    className={styles.dropdownLink}
+                                    onClick={closeHeaderAppsDropdown}
+                                >
+                                    Analog Clock
+                                </NavLink>
                             </div>
                         </div>
                     </nav>
@@ -345,6 +355,15 @@ function Header() {
                                             onClick={closeMenu}
                                         >
                                             Accordion Pro
+                                        </NavLink>
+                                    )}
+                                    {showAnalogClock && (
+                                        <NavLink
+                                            to="/apps/analog-clock"
+                                            className={styles.menuSubLink}
+                                            onClick={closeMenu}
+                                        >
+                                            Analog Clock
                                         </NavLink>
                                     )}
                                 </div>
