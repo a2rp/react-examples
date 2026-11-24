@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { FiArrowDown, FiCheckCircle, FiGithub, FiLayers, FiZap } from "react-icons/fi";
+import { FiArrowDown, FiCheckCircle, FiLayers, FiZap } from "react-icons/fi";
 
 import Accordion from "./components/accordion";
 import BackToTop from "./components/back-to-top";
@@ -111,18 +111,10 @@ function AccordionProPage() {
                                 className={styles.primaryAction}
                                 type="button"
                                 onClick={scrollToAccordion}
-                            >
-                                Try the demo <FiArrowDown aria-hidden="true" />
-                            </button>
-                            <a
-                                className={styles.secondaryAction}
-                                href="https://github.com/a2rp/accordion-pro"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FiGithub aria-hidden="true" /> Source code
-                            </a>
-                        </div>
+                        >
+                            Try the demo <FiArrowDown aria-hidden="true" />
+                        </button>
+                    </div>
 
                         <div className={styles.stats}>
                             <div>
