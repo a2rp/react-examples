@@ -1,0 +1,1 @@
+var e=`/react-examples/assets/accordion-hero-V8QhDYuL.jpg`;export{e as t};
