@@ -71,8 +71,26 @@ function Header() {
         }
 
         const menuButton = menuButtonRef.current;
-        const previousDocumentOverflow = document.documentElement.style.overflow;
-        document.documentElement.style.overflow = "hidden";
+        const root = document.documentElement;
+        const body = document.body;
+        const previousDocumentOverflow = root.style.overflow;
+        const previousBodyPaddingRight = body.style.paddingRight;
+        const previousContentWidth = root.clientWidth;
+
+        root.style.overflow = "hidden";
+
+        // Some browsers stop reserving the scrollbar gutter when overflow is
+        // hidden. Measure the actual width change and compensate only when it
+        // happens, so the page keeps the same content width while the menu is open.
+        const contentWidthChange = Math.max(0, root.clientWidth - previousContentWidth);
+
+        if (contentWidthChange > 0) {
+            const currentBodyPaddingRight = Number.parseFloat(
+                window.getComputedStyle(body).paddingRight,
+            ) || 0;
+            body.style.paddingRight = `${currentBodyPaddingRight + contentWidthChange}px`;
+        }
+
         closeButtonRef.current?.focus();
 
         function handleKeyDown(event) {
@@ -109,7 +127,8 @@ function Header() {
         document.addEventListener("keydown", handleKeyDown);
 
         return () => {
-            document.documentElement.style.overflow = previousDocumentOverflow;
+            root.style.overflow = previousDocumentOverflow;
+            body.style.paddingRight = previousBodyPaddingRight;
             document.removeEventListener("keydown", handleKeyDown);
             menuButton?.focus();
         };

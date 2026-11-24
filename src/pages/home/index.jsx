@@ -41,7 +41,7 @@ function HomePage() {
                             <FiLayers aria-hidden="true" />
                         </span>
                         <span className={styles.previewLabel}>Inside the collection</span>
-                        <span className={styles.previewCount}>02 demos</span>
+                        <span className={styles.previewCount}>{String(apps.length).padStart(2, "0")} demos</span>
                     </div>
                     <div className={styles.previewContent}>
                         <span className={styles.previewEyebrow}>Built to explore</span>

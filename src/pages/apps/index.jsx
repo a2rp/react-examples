@@ -72,7 +72,7 @@ function AppsPage() {
                             Pattern preview
                             <small>Disclosure component</small>
                         </span>
-                        <span className={styles.previewIndex}>01 / 02</span>
+                        <span className={styles.previewIndex}>01 / {String(apps.length).padStart(2, "0")}</span>
                     </div>
 
                     <div className={styles.previewDemo} aria-hidden="true">
@@ -108,7 +108,7 @@ function AppsPage() {
                     </div>
                     <span className={styles.appCount}>
                         <FiLayers aria-hidden="true" />
-                        02 interactive apps
+                        {String(apps.length).padStart(2, "0")} interactive apps
                     </span>
                 </div>
 

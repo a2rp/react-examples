@@ -1,0 +1,294 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(36px, 6vw, 64px) 20px;
+    color: #f4f6f8;
+
+    .clockSection {
+        width: min(100%, 760px);
+        margin-inline: auto;
+
+        .header {
+            margin-bottom: 30px;
+            text-align: center;
+
+            .label {
+                min-height: 32px;
+                margin-bottom: 18px;
+                padding-inline: 14px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                border-radius: 999px;
+                background: rgba(255, 255, 255, 0.04);
+                color: #bdbdbd;
+                font-size: 0.8rem;
+                font-weight: 700;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+            }
+
+            .title {
+                margin-bottom: 14px;
+                color: #f4f6f8;
+                font-size: clamp(2.4rem, 6vw, 4rem);
+                letter-spacing: -0.06em;
+                line-height: 1;
+            }
+
+            .description {
+                color: #aab4c3;
+                font-size: 0.98rem;
+                line-height: 1.7;
+            }
+        }
+
+        .clockCard {
+            padding: clamp(20px, 5vw, 32px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 28px;
+            background: rgba(9, 12, 18, 0.78);
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(18px);
+
+            .clockContainer {
+                position: relative;
+                width: min(100%, 420px);
+                aspect-ratio: 1;
+                container-type: inline-size;
+                overflow: hidden;
+                margin-inline: auto;
+                border: 1px solid rgba(255, 255, 255, 0.16);
+                border-radius: 50%;
+                background: radial-gradient(
+                    circle at 50% 42%,
+                    rgba(255, 255, 255, 0.09),
+                    rgba(255, 255, 255, 0.025) 45%,
+                    rgba(0, 0, 0, 0.35) 100%
+                ), #0a0b0e;
+                box-shadow: 0 24px 60px rgba(0, 0, 0, 0.38), inset 0 0 0 8px rgba(255, 255, 255, 0.025);
+
+                &::before {
+                    position: absolute;
+                    inset: 16px;
+                    border: 1px solid rgba(255, 255, 255, 0.06);
+                    border-radius: 50%;
+                    content: "";
+                }
+
+                .hourMarks,
+                .minuteMarks {
+                    position: absolute;
+                    inset: 0;
+                }
+
+                .hourMark {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 36px;
+                    height: 36px;
+                    margin: -18px;
+                    display: grid;
+                    place-items: center;
+                    color: #e8ebf0;
+                    font-size: clamp(0.8rem, 3.5cqw, 1rem);
+                    font-weight: 700;
+                    transform: rotate(calc(var(--hour) * 30deg)) translateY(calc(-50cqw + 48px)) rotate(calc(var(--hour) * -30deg));
+                }
+
+                .minuteMark {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 2px;
+                    height: 8px;
+                    margin: -4px 0 0 -1px;
+                    background: rgba(255, 255, 255, 0.24);
+                    transform: rotate(calc(var(--minute) * 6deg)) translateY(calc(-50cqw + 18px));
+
+                    &.major {
+                        width: 3px;
+                        height: 14px;
+                        margin: -7px 0 0 -1.5px;
+                        background: rgba(255, 255, 255, 0.76);
+                    }
+                }
+
+                .brand {
+                    position: absolute;
+                    top: 31%;
+                    left: 50%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 5px;
+                    transform: translateX(-50%);
+
+                    .brandName {
+                        color: #f4f6f8;
+                        font-size: 0.72rem;
+                        font-weight: 750;
+                        letter-spacing: 0.18em;
+                        text-transform: uppercase;
+                    }
+
+                    .brandText {
+                        color: #87909e;
+                        font-size: 0.62rem;
+                        letter-spacing: 0.08em;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .hand {
+                    position: absolute;
+                    bottom: 50%;
+                    left: 50%;
+                    border-radius: 999px;
+                    transform: translateX(-50%) rotate(0deg);
+                    transform-origin: 50% 100%;
+                    will-change: transform;
+                }
+
+                .hour {
+                    z-index: 4;
+                    width: 7px;
+                    height: 24%;
+                    background: #f1f1f1;
+                    box-shadow: 0 0 14px rgba(255, 255, 255, 0.12);
+                }
+
+                .minute {
+                    z-index: 5;
+                    width: 5px;
+                    height: 32%;
+                    background: #c9cdd4;
+                    box-shadow: 0 0 14px rgba(255, 255, 255, 0.1);
+                }
+
+                .second {
+                    z-index: 6;
+                    width: 2px;
+                    height: 37%;
+                    background: #a8c7ff;
+
+                    &::after {
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        width: 2px;
+                        height: 46px;
+                        background: #a8c7ff;
+                        content: "";
+                        transform: translateX(-50%);
+                    }
+                }
+
+                .centerDot {
+                    position: absolute;
+                    z-index: 10;
+                    top: 50%;
+                    left: 50%;
+                    width: 18px;
+                    height: 18px;
+                    border: 5px solid #15171b;
+                    border-radius: 50%;
+                    background: #f4f6f8;
+                    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .timeInfo {
+                margin-top: 28px;
+                text-align: center;
+
+                .digitalRow {
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .digitalTime {
+                        color: #f4f6f8;
+                        font-size: clamp(1.8rem, 5vw, 3rem);
+                        font-weight: 750;
+                        font-variant-numeric: tabular-nums;
+                        letter-spacing: -0.04em;
+                    }
+
+                    .period {
+                        color: #9aa4b2;
+                        font-size: 0.85rem;
+                        font-weight: 700;
+                        letter-spacing: 0.08em;
+                    }
+                }
+
+                .currentDate {
+                    margin-top: 9px;
+                    color: #aab4c3;
+                    line-height: 1.5;
+                }
+
+                .status {
+                    margin-top: 17px;
+                    padding: 8px 12px;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    border-radius: 999px;
+                    background: rgba(255, 255, 255, 0.04);
+                    color: #aab4c3;
+                    font-size: 0.75rem;
+
+                    .statusDot {
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        background: #a8c7ff;
+                        box-shadow: 0 0 10px rgba(168, 199, 255, 0.6);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 560px) {
+        padding: 34px 14px;
+
+        .clockSection {
+            .header {
+                margin-bottom: 24px;
+            }
+
+            .clockCard {
+                padding: 18px;
+                border-radius: 22px;
+            }
+        }
+    }
+
+    @media (max-width: 360px) {
+        .clockSection {
+            .clockCard {
+                padding: 12px;
+            }
+
+            .clockContainer {
+                .hourMark {
+                    font-size: 0.72rem;
+                }
+
+                .brandText {
+                    display: none;
+                }
+            }
+        }
+    }
+}
