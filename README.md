@@ -1,6 +1,15 @@
-# React Examples
+# React Mini Projects
 
-Small React apps and UI demos collected in one project.
+A collection of focused, interactive React projects. Each app has its own route in the shared showcase and can be tried directly in the browser.
+
+## Projects
+
+- Accordion — `/apps/accordion`
+- Accordion Pro — `/apps/accordion-pro`
+- Analog Clock — `/apps/analog-clock`
+- Avataar Generator — `/apps/avataar-generator`
+- Random Avataars — `/apps/random-avataars`
+- API Request Workbench — `/apps/api-request-workbench`
 
 ## Run locally
 

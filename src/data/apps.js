@@ -1,10 +1,11 @@
-import { FiClock, FiLayers, FiSmile, FiZap } from "react-icons/fi";
+import { FiClock, FiCode, FiLayers, FiSmile, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
 import analogClockImage from "../pages/apps/analog-clock/images/analog-clock-preview.png";
 import avataarGeneratorImage from "../pages/apps/avataarGenerator/images/avataar-generator-preview.png";
 import randomAvataarsImage from "../pages/apps/randomAvataars/images/random-avataars-preview.png";
+import apiRequestWorkbenchImage from "../pages/apps/apiRequestWorkbench/images/api-request-workbench-preview.png";
 
 const apps = [
     {
@@ -71,6 +72,19 @@ const apps = [
         to: "/apps/random-avataars",
         features: ["28 illustration styles", "Random or selected style", "PNG and SVG export"],
         action: "Try Random Avataars",
+    },
+    {
+        number: "06",
+        level: "UTILITY",
+        title: "API Request Workbench",
+        description:
+            "Compose REST requests, inspect live responses, and revisit recent calls in a focused browser workspace.",
+        image: apiRequestWorkbenchImage,
+        imageAlt: "API Request Workbench with request composer and response viewer",
+        icon: FiCode,
+        to: "/apps/api-request-workbench",
+        features: ["Five HTTP methods", "Response headers and timing", "Local request history"],
+        action: "Try API Request Workbench",
     },
 ];
 
