@@ -29,12 +29,15 @@ function Header() {
         matchesMenuLink("Apps") ||
         matchesMenuLink("Accordion") ||
         matchesMenuLink("Accordion Pro") ||
-        matchesMenuLink("Analog Clock");
+        matchesMenuLink("Analog Clock") ||
+        matchesMenuLink("Avataar Generator");
     const showAccordion = matchesMenuLink("Apps") || matchesMenuLink("Accordion");
     const showAccordionPro =
         matchesMenuLink("Apps") || matchesMenuLink("Accordion Pro");
     const showAnalogClock =
         matchesMenuLink("Apps") || matchesMenuLink("Analog Clock");
+    const showAvataarGenerator =
+        matchesMenuLink("Apps") || matchesMenuLink("Avataar Generator");
     const menuAppsExpanded = normalizedSearchTerm
         ? showApps
         : isAppsExpanded;
@@ -225,6 +228,13 @@ function Header() {
                                 >
                                     Analog Clock
                                 </NavLink>
+                                <NavLink
+                                    to="/apps/avataar-generator"
+                                    className={styles.dropdownLink}
+                                    onClick={closeHeaderAppsDropdown}
+                                >
+                                    Avataar Generator
+                                </NavLink>
                             </div>
                         </div>
                     </nav>
@@ -364,6 +374,15 @@ function Header() {
                                             onClick={closeMenu}
                                         >
                                             Analog Clock
+                                        </NavLink>
+                                    )}
+                                    {showAvataarGenerator && (
+                                        <NavLink
+                                            to="/apps/avataar-generator"
+                                            className={styles.menuSubLink}
+                                            onClick={closeMenu}
+                                        >
+                                            Avataar Generator
                                         </NavLink>
                                     )}
                                 </div>

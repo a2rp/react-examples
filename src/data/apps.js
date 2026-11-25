@@ -1,8 +1,9 @@
-import { FiClock, FiLayers, FiZap } from "react-icons/fi";
+import { FiClock, FiLayers, FiSmile, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
 import analogClockImage from "../pages/apps/analog-clock/images/analog-clock-preview.png";
+import avataarGeneratorImage from "../pages/apps/avataarGenerator/images/avataar-generator-preview.png";
 
 const apps = [
     {
@@ -43,6 +44,19 @@ const apps = [
         to: "/apps/analog-clock",
         features: ["Live local time", "Smooth hand movement", "Responsive dial"],
         action: "Try Analog Clock",
+    },
+    {
+        number: "04",
+        level: "CREATIVE",
+        title: "Avataar Generator",
+        description:
+            "Create a distinctive avatar from 31 DiceBear styles, fine-tune its look, and export it in seconds.",
+        image: avataarGeneratorImage,
+        imageAlt: "Avataar Generator studio preview showing avatar styles and controls",
+        icon: FiSmile,
+        to: "/apps/avataar-generator",
+        features: ["31 avatar styles", "Saved favorites", "PNG and SVG export"],
+        action: "Try Avataar Generator",
     },
 ];
 
