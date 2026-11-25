@@ -4,6 +4,7 @@ import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
 import analogClockImage from "../pages/apps/analog-clock/images/analog-clock-preview.png";
 import avataarGeneratorImage from "../pages/apps/avataarGenerator/images/avataar-generator-preview.png";
+import randomAvataarsImage from "../pages/apps/randomAvataars/images/random-avataars-preview.png";
 
 const apps = [
     {
@@ -57,6 +58,19 @@ const apps = [
         to: "/apps/avataar-generator",
         features: ["31 avatar styles", "Saved favorites", "PNG and SVG export"],
         action: "Try Avataar Generator",
+    },
+    {
+        number: "05",
+        level: "CREATIVE",
+        title: "Random Avataars",
+        description:
+            "Generate a fresh DiceBear avatar from 28 styles, then copy or download it in seconds.",
+        image: randomAvataarsImage,
+        imageAlt: "Random Avataars interface with a generated avatar and style selector",
+        icon: FiSmile,
+        to: "/apps/random-avataars",
+        features: ["28 illustration styles", "Random or selected style", "PNG and SVG export"],
+        action: "Try Random Avataars",
     },
 ];
 

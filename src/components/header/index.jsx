@@ -30,7 +30,8 @@ function Header() {
         matchesMenuLink("Accordion") ||
         matchesMenuLink("Accordion Pro") ||
         matchesMenuLink("Analog Clock") ||
-        matchesMenuLink("Avataar Generator");
+        matchesMenuLink("Avataar Generator") ||
+        matchesMenuLink("Random Avataars");
     const showAccordion = matchesMenuLink("Apps") || matchesMenuLink("Accordion");
     const showAccordionPro =
         matchesMenuLink("Apps") || matchesMenuLink("Accordion Pro");
@@ -38,6 +39,8 @@ function Header() {
         matchesMenuLink("Apps") || matchesMenuLink("Analog Clock");
     const showAvataarGenerator =
         matchesMenuLink("Apps") || matchesMenuLink("Avataar Generator");
+    const showRandomAvataars =
+        matchesMenuLink("Apps") || matchesMenuLink("Random Avataars");
     const menuAppsExpanded = normalizedSearchTerm
         ? showApps
         : isAppsExpanded;
@@ -235,6 +238,13 @@ function Header() {
                                 >
                                     Avataar Generator
                                 </NavLink>
+                                <NavLink
+                                    to="/apps/random-avataars"
+                                    className={styles.dropdownLink}
+                                    onClick={closeHeaderAppsDropdown}
+                                >
+                                    Random Avataars
+                                </NavLink>
                             </div>
                         </div>
                     </nav>
@@ -383,6 +393,15 @@ function Header() {
                                             onClick={closeMenu}
                                         >
                                             Avataar Generator
+                                        </NavLink>
+                                    )}
+                                    {showRandomAvataars && (
+                                        <NavLink
+                                            to="/apps/random-avataars"
+                                            className={styles.menuSubLink}
+                                            onClick={closeMenu}
+                                        >
+                                            Random Avataars
                                         </NavLink>
                                     )}
                                 </div>
