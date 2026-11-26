@@ -11,6 +11,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Random Avataars — `/apps/random-avataars`
 - API Request Workbench — `/apps/api-request-workbench`
 - Base64 Converter — `/apps/base64-converter`
+- Basic Themed App - `/apps/basic-themed-app`
 
 ## Run locally
 

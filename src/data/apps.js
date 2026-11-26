@@ -1,4 +1,4 @@
-import { FiCalendar, FiClock, FiCode, FiLayers, FiSmile, FiZap } from "react-icons/fi";
+import { FiCalendar, FiClock, FiCode, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -8,6 +8,7 @@ import randomAvataarsImage from "../pages/apps/randomAvataars/images/random-avat
 import apiRequestWorkbenchImage from "../pages/apps/apiRequestWorkbench/images/api-request-workbench-preview.png";
 import base64ConverterImage from "../pages/apps/base64Converter/images/base64-converter-preview.png";
 import helloReactImage from "../pages/apps/helloReact/images/hello-react-preview.png";
+import basicThemedAppImage from "../pages/apps/basicThemedApp/images/basic-themed-app-preview.png";
 
 const apps = [
     {
@@ -113,6 +114,19 @@ const apps = [
         to: "/apps/hello-react",
         features: ["Live date and time", "Browser locale and time zone", "Clean React lifecycle"],
         action: "Try Hello React",
+    },
+    {
+        number: "09",
+        level: "FOUNDATION",
+        title: "Basic Themed App",
+        description:
+            "A responsive React starter with a persistent light and dark theme, system preference support, and reusable design tokens.",
+        image: basicThemedAppImage,
+        imageAlt: "Basic Themed App with a theme toggle and responsive feature cards",
+        icon: FiSun,
+        to: "/apps/basic-themed-app",
+        features: ["Light and dark themes", "Saved preference", "System theme fallback"],
+        action: "Try Basic Themed App",
     },
 ];
 
