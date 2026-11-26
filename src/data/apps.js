@@ -16,6 +16,7 @@ import codeDiffViewerImage from "../pages/apps/codeDiffViewer/images/code-diff-v
 import colorContrastCheckerImage from "../pages/apps/colorContrastChecker/images/color-contrast-checker-preview.png";
 import colorGradientExplorerImage from "../pages/apps/colorGradientExplorer/images/color-gradient-explorer-preview.png";
 import colorPaletteStudioImage from "../pages/apps/colorPaletteStudio/images/color-palette-studio-preview.png";
+import colorPickerImage from "../pages/apps/colorPicker/images/color-picker-preview.png";
 
 const apps = [
     {
@@ -225,6 +226,19 @@ const apps = [
         to: "/apps/color-palette-studio",
         features: ["Four harmony schemes", "Five editable colors", "Live storefront preview"],
         action: "Build a Palette",
+    },
+    {
+        number: "17",
+        level: "UTILITY",
+        title: "Color Picker",
+        description:
+            "Explore named CSS colors or choose a custom shade, then copy its HEX, RGB, and HSL values.",
+        image: colorPickerImage,
+        imageAlt: "Color Picker with a selected color preview and color value controls",
+        icon: FiDroplet,
+        to: "/apps/color-picker",
+        features: ["Named CSS colors", "HEX, RGB, and HSL", "Browser-local selection"],
+        action: "Pick a Color",
     },
 ];
 

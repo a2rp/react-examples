@@ -21,6 +21,7 @@ const CodeDiffViewerPage = lazy(() => import("./pages/apps/codeDiffViewer/index.
 const ColorContrastCheckerPage = lazy(() => import("./pages/apps/colorContrastChecker/index.jsx"));
 const ColorGradientExplorerPage = lazy(() => import("./pages/apps/colorGradientExplorer/index.jsx"));
 const ColorPaletteStudioPage = lazy(() => import("./pages/apps/colorPaletteStudio/index.jsx"));
+const ColorPickerPage = lazy(() => import("./pages/apps/colorPicker/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -50,6 +51,7 @@ function AppRoutes() {
                     <Route path="color-contrast-checker" element={<ColorContrastCheckerPage />} />
                     <Route path="color-gradient-explorer" element={<ColorGradientExplorerPage />} />
                     <Route path="color-palette-studio" element={<ColorPaletteStudioPage />} />
+                    <Route path="color-picker" element={<ColorPickerPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

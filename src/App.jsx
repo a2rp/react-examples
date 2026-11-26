@@ -15,6 +15,7 @@ function App() {
         "/apps/color-contrast-checker",
         "/apps/color-gradient-explorer",
         "/apps/color-palette-studio",
+        "/apps/color-picker",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

@@ -19,6 +19,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Color Contrast Checker - `/apps/color-contrast-checker`
 - Color Gradient Explorer - `/apps/color-gradient-explorer`
 - Color Palette Studio - `/apps/color-palette-studio`
+- Color Picker - `/apps/color-picker`
 
 ## Run locally
 
