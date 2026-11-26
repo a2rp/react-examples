@@ -34,6 +34,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Hello World React - `/apps/hello-world-react`
 - HTML Colors - `/apps/html-colors`
 - HTTP Status Reference - `/apps/http-status-reference`
+- Icon Library Browser - `/apps/icon-library-browser`
 
 - Digital Clock - `/apps/digital-clock`
 

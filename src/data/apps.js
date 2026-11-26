@@ -36,6 +36,7 @@ import helloReactCounterImage from "../pages/apps/helloReactCounter/screenshot.p
 import helloWorldReactImage from "../pages/apps/helloWorldReact/screenshot.png";
 import htmlColorsImage from "../pages/apps/htmlColors/app/screenshot.png";
 import httpStatusReferenceImage from "../pages/apps/httpStatusReference/app/screenshot.png";
+import iconLibraryBrowserImage from "../pages/apps/iconLibraryBrowser/app/screenshot.png";
 
 const apps = [
     {
@@ -504,6 +505,19 @@ const apps = [
         to: "/apps/http-status-reference",
         features: ["42 status-code entries", "Search and class filters", "Copy codes and next-step guidance"],
         action: "Explore HTTP Statuses",
+    },
+    {
+        number: "37",
+        level: "UTILITY",
+        title: "Icon Library Browser",
+        description:
+            "Search curated Lucide, Feather, and Font Awesome icons, preview size and color, then copy React or SVG code.",
+        image: iconLibraryBrowserImage,
+        imageAlt: "Icon Library Browser with searchable icon catalog and preview controls",
+        icon: FiLayers,
+        to: "/apps/icon-library-browser",
+        features: ["85 icons across three collections", "Search and favorites", "Copy React or SVG, download SVG"],
+        action: "Browse Icons",
     },
 ];
 

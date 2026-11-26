@@ -34,6 +34,7 @@ function App() {
         "/apps/hello-world-react",
         "/apps/html-colors",
         "/apps/http-status-reference",
+        "/apps/icon-library-browser",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 
