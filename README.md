@@ -23,6 +23,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 
 - Dictionary - `/apps/dictionary`
 - Dropdown Pro - `/apps/dropdown-pro`
+- Dynamic Tabs - `/apps/dynamic-tabs`
 
 ## Run locally
 

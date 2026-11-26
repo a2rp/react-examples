@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "tab": "Procedural",
+        "description": "Procedural programming organizes a program as a sequence of instructions grouped into procedures or functions. C and Pascal are commonly taught in this style. C++, Java, Python, and BASIC can also be used procedurally, while supporting other programming styles too:",
+        "examples": ["C", "Pascal", "Fortran", "BASIC"]
+    },
+    {
+        "id": 2,
+        "tab": "Functional",
+        "description": "Functional programming builds computations by composing function applications. It often favors immutable data and limits side effects, though languages differ in how strongly they enforce these ideas. Haskell, Erlang, Elixir, F#, and Scala support functional programming:",
+        "examples": ["Haskell", "Erlang", "Elixir", "F#", "Scala"]
+    },
+    {
+        "id": 3,
+        "tab": "Object-oriented",
+        "description": "Object-oriented programming organizes software around objects that combine state with behavior. Classes are common, but languages can use other object models. This style can help structure programs; it does not automatically guarantee reuse or scalability. Java, Python, PHP, C++, and Ruby support object-oriented programming:",
+        "examples": ["Java", "Python", "PHP", "C++", "Ruby"]
+    },
+    {
+        "id": 4,
+        "tab": "Scripting",
+        "description": "Scripting describes a common way of using languages for automation, system tasks, or interactive web behavior; it is not a separate programming paradigm. A script can use procedural, functional, or object-oriented ideas. Examples commonly used for scripting include:",
+        "examples": ["JavaScript", "PHP", "Ruby", "Python", "Bash", "Perl"]
+    },
+    {
+        "id": 5,
+        "tab": "Logic",
+        "description": "Logic programming represents relationships with facts and rules, then uses queries to derive answers. The language runtime searches for solutions that satisfy the rules. Prolog and Datalog are examples; logic programming is also a declarative style:",
+        "examples": ["Prolog", "Datalog"]
+    }
+]

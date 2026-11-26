@@ -25,6 +25,7 @@ import dateCountdownToolImage from "../pages/apps/dateCountdownTool/screenshot.p
 import designTokenEditorImage from "../pages/apps/designTokenEditor/screenshot.png";
 import dictionaryImage from "../pages/apps/dictionary/screenshot.png";
 import dropdownProImage from "../pages/apps/dropdownPro/screenshot.png";
+import dynamicTabsImage from "../pages/apps/dynamicTabs/screenshot.png";
 
 const apps = [
     {
@@ -351,6 +352,19 @@ const apps = [
         to: "/apps/dropdown-pro",
         features: ["Keyboard navigation", "Smart menu placement", "Nested actions"],
         action: "Try Dropdown Pro",
+    },
+    {
+        number: "26",
+        level: "LEARNING",
+        title: "Dynamic Tabs",
+        description:
+            "Compare procedural, functional, object-oriented, scripting, and logic programming with concise examples.",
+        image: dynamicTabsImage,
+        imageAlt: "Dynamic Tabs interface comparing programming paradigms",
+        icon: FiLayers,
+        to: "/apps/dynamic-tabs",
+        features: ["Five paradigm views", "Keyboard-accessible tabs", "Local example data"],
+        action: "Compare Paradigms",
     },
 ];
 

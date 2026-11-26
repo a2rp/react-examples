@@ -24,6 +24,7 @@ function App() {
         "/apps/design-token-editor",
         "/apps/dictionary",
         "/apps/dropdown-pro",
+        "/apps/dynamic-tabs",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 
