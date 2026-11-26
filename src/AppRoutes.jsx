@@ -23,6 +23,7 @@ const ColorGradientExplorerPage = lazy(() => import("./pages/apps/colorGradientE
 const ColorPaletteStudioPage = lazy(() => import("./pages/apps/colorPaletteStudio/index.jsx"));
 const ColorPickerPage = lazy(() => import("./pages/apps/colorPicker/index.jsx"));
 const CronExpressionBuilderPage = lazy(() => import("./pages/apps/cronExpressionBuilder/index.jsx"));
+const CssGradientMakerPage = lazy(() => import("./pages/apps/cssGradientMaker/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -54,6 +55,7 @@ function AppRoutes() {
                     <Route path="color-palette-studio" element={<ColorPaletteStudioPage />} />
                     <Route path="color-picker" element={<ColorPickerPage />} />
                     <Route path="cron-expression-builder" element={<CronExpressionBuilderPage />} />
+                    <Route path="css-gradient-maker" element={<CssGradientMakerPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

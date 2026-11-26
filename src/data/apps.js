@@ -18,6 +18,7 @@ import colorGradientExplorerImage from "../pages/apps/colorGradientExplorer/imag
 import colorPaletteStudioImage from "../pages/apps/colorPaletteStudio/images/color-palette-studio-preview.png";
 import colorPickerImage from "../pages/apps/colorPicker/images/color-picker-preview.png";
 import cronExpressionBuilderImage from "../pages/apps/cronExpressionBuilder/images/cron-expression-builder-preview.png";
+import cssGradientMakerImage from "../pages/apps/cssGradientMaker/images/css-gradient-maker-preview.png";
 
 const apps = [
     {
@@ -253,6 +254,19 @@ const apps = [
         to: "/apps/cron-expression-builder",
         features: ["Five-field syntax", "Plain-language explanations", "Upcoming local runs"],
         action: "Build a Schedule",
+    },
+    {
+        number: "19",
+        level: "CREATIVE",
+        title: "CSS Gradient Maker",
+        description:
+            "Create linear or radial gradients, adjust two to five color stops, and copy the generated CSS declaration.",
+        image: cssGradientMakerImage,
+        imageAlt: "CSS Gradient Maker with editable color stops and a live gradient preview",
+        icon: FiDroplet,
+        to: "/apps/css-gradient-maker",
+        features: ["Linear and radial gradients", "Editable color stops", "Copyable CSS"],
+        action: "Make a Gradient",
     },
 ];
 
