@@ -29,6 +29,7 @@ const DailyPlannerPage = lazy(() => import("./pages/apps/dailyPlanner/index.jsx"
 const DateCountdownToolPage = lazy(() => import("./pages/apps/dateCountdownTool/index.jsx"));
 const DesignTokenEditorPage = lazy(() => import("./pages/apps/designTokenEditor/index.jsx"));
 const DictionaryPage = lazy(() => import("./pages/apps/dictionary/index.jsx"));
+const DropdownProPage = lazy(() => import("./pages/apps/dropdownPro/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -66,6 +67,7 @@ function AppRoutes() {
                     <Route path="date-countdown-tool" element={<DateCountdownToolPage />} />
                     <Route path="design-token-editor" element={<DesignTokenEditorPage />} />
                     <Route path="dictionary" element={<DictionaryPage />} />
+                    <Route path="dropdown-pro" element={<DropdownProPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

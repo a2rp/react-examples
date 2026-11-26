@@ -1,4 +1,4 @@
-import { FiBookOpen, FiCalendar, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -24,6 +24,7 @@ import dailyPlannerImage from "../pages/apps/dailyPlanner/screenshot.png";
 import dateCountdownToolImage from "../pages/apps/dateCountdownTool/screenshot.png";
 import designTokenEditorImage from "../pages/apps/designTokenEditor/screenshot.png";
 import dictionaryImage from "../pages/apps/dictionary/screenshot.png";
+import dropdownProImage from "../pages/apps/dropdownPro/screenshot.png";
 
 const apps = [
     {
@@ -337,6 +338,19 @@ const apps = [
         to: "/apps/dictionary",
         features: ["Word lookup", "Definitions by part of speech", "Responsive reference view"],
         action: "Look Up a Word",
+    },
+    {
+        number: "25",
+        level: "COMPONENT",
+        title: "Dropdown Pro",
+        description:
+            "Explore accessible dropdown menus with keyboard navigation, viewport-aware positioning, nested actions, and portal rendering.",
+        image: dropdownProImage,
+        imageAlt: "Dropdown Pro interface demonstrating nested workspace actions",
+        icon: FiChevronDown,
+        to: "/apps/dropdown-pro",
+        features: ["Keyboard navigation", "Smart menu placement", "Nested actions"],
+        action: "Try Dropdown Pro",
     },
 ];
 

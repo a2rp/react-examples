@@ -23,6 +23,7 @@ function App() {
         "/apps/date-countdown-tool",
         "/apps/design-token-editor",
         "/apps/dictionary",
+        "/apps/dropdown-pro",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

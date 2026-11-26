@@ -22,6 +22,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Color Picker - `/apps/color-picker`
 
 - Dictionary - `/apps/dictionary`
+- Dropdown Pro - `/apps/dropdown-pro`
 
 ## Run locally
 
