@@ -32,6 +32,7 @@ import fileSizeVisualizerImage from "../pages/apps/fileSizeVisualizer/screenshot
 import flashcardStudyToolImage from "../pages/apps/flashcardStudyTool/screenshot.png";
 import fontPairStudioImage from "../pages/apps/fontPairStudio/screenshot.png";
 import gitCommandExplorerImage from "../pages/apps/gitCommandExplorer/screenshot.png";
+import helloReactCounterImage from "../pages/apps/helloReactCounter/screenshot.png";
 
 const apps = [
     {
@@ -448,6 +449,19 @@ const apps = [
         to: "/apps/git-command-explorer",
         features: ["Search 29 commands", "Risk guidance", "Copy without execution"],
         action: "Explore Git Commands",
+    },
+    {
+        number: "33",
+        level: "FOUNDATION",
+        title: "Hello React Counter",
+        description:
+            "A compact React starter with an interactive counter, accessible controls, and a responsive project shell.",
+        image: helloReactCounterImage,
+        imageAlt: "Hello React starter showing its interactive counter",
+        icon: FiCode,
+        to: "/apps/hello-react-counter",
+        features: ["Interactive counter", "Reset control", "Responsive layout"],
+        action: "Try Hello React Counter",
     },
 ];
 

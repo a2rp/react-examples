@@ -30,6 +30,7 @@ function App() {
         "/apps/flashcard-study-tool",
         "/apps/fontpair-studio",
         "/apps/git-command-explorer",
+        "/apps/hello-react-counter",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

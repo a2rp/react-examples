@@ -30,6 +30,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Flashcard Study Tool - `/apps/flashcard-study-tool`
 - FontPair Studio - `/apps/fontpair-studio`
 - Git Command Explorer - `/apps/git-command-explorer`
+- Hello React Counter - `/apps/hello-react-counter`
 
 - Digital Clock - `/apps/digital-clock`
 
