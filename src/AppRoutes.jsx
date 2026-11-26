@@ -14,6 +14,7 @@ const AvataarGeneratorPage = lazy(() => import("./pages/apps/avataarGenerator/in
 const RandomAvataarsPage = lazy(() => import("./pages/apps/randomAvataars/index.jsx"));
 const ApiRequestWorkbenchPage = lazy(() => import("./pages/apps/apiRequestWorkbench/index.jsx"));
 const Base64ConverterPage = lazy(() => import("./pages/apps/base64Converter/index.jsx"));
+const BlobGeneratorPage = lazy(() => import("./pages/apps/blobGenerator/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -36,6 +37,7 @@ function AppRoutes() {
                     <Route path="random-avataars" element={<RandomAvataarsPage />} />
                     <Route path="api-request-workbench" element={<ApiRequestWorkbenchPage />} />
                     <Route path="base64-converter" element={<Base64ConverterPage />} />
+                    <Route path="blob-generator" element={<BlobGeneratorPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

@@ -1,4 +1,4 @@
-import { FiCalendar, FiClock, FiCode, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiCalendar, FiClock, FiCode, FiDroplet, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -9,6 +9,7 @@ import apiRequestWorkbenchImage from "../pages/apps/apiRequestWorkbench/images/a
 import base64ConverterImage from "../pages/apps/base64Converter/images/base64-converter-preview.png";
 import helloReactImage from "../pages/apps/helloReact/images/hello-react-preview.png";
 import basicThemedAppImage from "../pages/apps/basicThemedApp/images/basic-themed-app-preview.png";
+import blobGeneratorImage from "../pages/apps/blobGenerator/images/blob-generator-preview.png";
 
 const apps = [
     {
@@ -127,6 +128,19 @@ const apps = [
         to: "/apps/basic-themed-app",
         features: ["Light and dark themes", "Saved preference", "System theme fallback"],
         action: "Try Basic Themed App",
+    },
+    {
+        number: "10",
+        level: "CREATIVE",
+        title: "Blob Generator",
+        description:
+            "Shape an organic gradient blob with live size and corner controls, then copy the CSS for your interface.",
+        image: blobGeneratorImage,
+        imageAlt: "Blob Generator with a live gradient shape preview and CSS controls",
+        icon: FiDroplet,
+        to: "/apps/blob-generator",
+        features: ["Live shape preview", "Independent corner radii", "Copy-ready CSS"],
+        action: "Try Blob Generator",
     },
 ];
 
