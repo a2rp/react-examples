@@ -1,4 +1,4 @@
-import { FiCalendar, FiClock, FiCode, FiDroplet, FiFilm, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiCalendar, FiClipboard, FiClock, FiCode, FiDroplet, FiFilm, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -11,6 +11,7 @@ import helloReactImage from "../pages/apps/helloReact/images/hello-react-preview
 import basicThemedAppImage from "../pages/apps/basicThemedApp/images/basic-themed-app-preview.png";
 import blobGeneratorImage from "../pages/apps/blobGenerator/images/blob-generator-preview.png";
 import { carouselSlides } from "../pages/apps/cinematicCarousel/data";
+import clipboardSnippetLibraryImage from "../pages/apps/clipboardSnippetLibrary/images/clipboard-snippet-library-preview.png";
 
 const apps = [
     {
@@ -155,6 +156,19 @@ const apps = [
         to: "/apps/cinematic-carousel-ui",
         features: ["Autoplay and pause", "Keyboard and swipe controls", "Reduced-motion support"],
         action: "Try Cinematic Carousel",
+    },
+    {
+        number: "12",
+        level: "UTILITY",
+        title: "Clipboard Snippet Library",
+        description:
+            "Save reusable commands, code, and notes in a searchable browser library with categories, pinning, editing, and one-click copy.",
+        image: clipboardSnippetLibraryImage,
+        imageAlt: "Clipboard Snippet Library with categorized saved text snippets",
+        icon: FiClipboard,
+        to: "/apps/clipboard-snippet-library",
+        features: ["Browser-local snippets", "Search and categories", "Pin and copy"],
+        action: "Open Snippet Library",
     },
 ];
 

@@ -7,16 +7,21 @@ import styles from "./App.module.css";
 
 function App() {
     const { pathname } = useLocation();
-    const isCinematicCarousel = pathname === "/apps/cinematic-carousel-ui";
+    const normalizedPathname = pathname.replace(/\/+$/, "") || "/";
+    const isStandaloneApp = [
+        "/apps/cinematic-carousel-ui",
+        "/apps/clipboard-snippet-library",
+    ].includes(normalizedPathname);
+    const RouteContainer = isStandaloneApp ? "div" : "main";
 
     return (
         <div className={styles.app}>
             <ScrollToTop />
-            {!isCinematicCarousel && <Header />}
-            <main className={isCinematicCarousel ? styles.cinematicCarouselRoute : styles.routes}>
+            {!isStandaloneApp && <Header />}
+            <RouteContainer className={isStandaloneApp ? styles.standaloneAppRoute : styles.routes}>
                 <AppRoutes />
-            </main>
-            {!isCinematicCarousel && <Footer />}
+            </RouteContainer>
+            {!isStandaloneApp && <Footer />}
         </div>
     );
 }

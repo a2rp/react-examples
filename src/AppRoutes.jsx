@@ -16,6 +16,7 @@ const ApiRequestWorkbenchPage = lazy(() => import("./pages/apps/apiRequestWorkbe
 const Base64ConverterPage = lazy(() => import("./pages/apps/base64Converter/index.jsx"));
 const BlobGeneratorPage = lazy(() => import("./pages/apps/blobGenerator/index.jsx"));
 const CinematicCarouselPage = lazy(() => import("./pages/apps/cinematicCarousel/index.jsx"));
+const ClipboardSnippetLibraryPage = lazy(() => import("./pages/apps/clipboardSnippetLibrary/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -40,6 +41,7 @@ function AppRoutes() {
                     <Route path="base64-converter" element={<Base64ConverterPage />} />
                     <Route path="blob-generator" element={<BlobGeneratorPage />} />
                     <Route path="cinematic-carousel-ui" element={<CinematicCarouselPage />} />
+                    <Route path="clipboard-snippet-library" element={<ClipboardSnippetLibraryPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

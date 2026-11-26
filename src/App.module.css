@@ -36,7 +36,7 @@
         padding-top: var(--header-height);
     }
 
-    .cinematicCarouselRoute {
+    .standaloneAppRoute {
         width: 100%;
         min-height: 100vh;
         max-width: none;

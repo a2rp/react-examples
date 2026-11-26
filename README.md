@@ -14,6 +14,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Basic Themed App - `/apps/basic-themed-app`
 - Blob Generator - `/apps/blob-generator`
 - Cinematic Carousel UI - `/apps/cinematic-carousel-ui`
+- Clipboard Snippet Library - `/apps/clipboard-snippet-library`
 
 ## Run locally
 
