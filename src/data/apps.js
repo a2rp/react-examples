@@ -1,4 +1,4 @@
-import { FiCalendar, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiBookOpen, FiCalendar, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -23,6 +23,7 @@ import currencyConverterImage from "../pages/apps/currencyConverter/images/curre
 import dailyPlannerImage from "../pages/apps/dailyPlanner/screenshot.png";
 import dateCountdownToolImage from "../pages/apps/dateCountdownTool/screenshot.png";
 import designTokenEditorImage from "../pages/apps/designTokenEditor/screenshot.png";
+import dictionaryImage from "../pages/apps/dictionary/screenshot.png";
 
 const apps = [
     {
@@ -323,6 +324,19 @@ const apps = [
         to: "/apps/design-token-editor",
         features: ["Editable design tokens", "Live interface preview", "CSS and JSON export"],
         action: "Edit Design Tokens",
+    },
+    {
+        number: "24",
+        level: "REFERENCE",
+        title: "Dictionary",
+        description:
+            "Look up a word and explore its definitions and parts of speech with a quick Datamuse-powered search.",
+        image: dictionaryImage,
+        imageAlt: "Dictionary search page ready to look up word meanings",
+        icon: FiBookOpen,
+        to: "/apps/dictionary",
+        features: ["Word lookup", "Definitions by part of speech", "Responsive reference view"],
+        action: "Look Up a Word",
     },
 ];
 

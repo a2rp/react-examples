@@ -21,6 +21,8 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Color Palette Studio - `/apps/color-palette-studio`
 - Color Picker - `/apps/color-picker`
 
+- Dictionary - `/apps/dictionary`
+
 ## Run locally
 
 ```bash

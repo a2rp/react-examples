@@ -22,6 +22,7 @@ function App() {
         "/apps/daily-planner",
         "/apps/date-countdown-tool",
         "/apps/design-token-editor",
+        "/apps/dictionary",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 
