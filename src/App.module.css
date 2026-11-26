@@ -35,4 +35,13 @@
         flex: 1;
         padding-top: var(--header-height);
     }
+
+    .cinematicCarouselRoute {
+        width: 100%;
+        min-height: 100vh;
+        max-width: none;
+        margin-inline: 0;
+        flex: 1;
+        padding: 0;
+    }
 }

@@ -13,6 +13,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Base64 Converter — `/apps/base64-converter`
 - Basic Themed App - `/apps/basic-themed-app`
 - Blob Generator - `/apps/blob-generator`
+- Cinematic Carousel UI - `/apps/cinematic-carousel-ui`
 
 ## Run locally
 

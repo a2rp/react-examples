@@ -1,4 +1,4 @@
-import { FiCalendar, FiClock, FiCode, FiDroplet, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiCalendar, FiClock, FiCode, FiDroplet, FiFilm, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -10,6 +10,7 @@ import base64ConverterImage from "../pages/apps/base64Converter/images/base64-co
 import helloReactImage from "../pages/apps/helloReact/images/hello-react-preview.png";
 import basicThemedAppImage from "../pages/apps/basicThemedApp/images/basic-themed-app-preview.png";
 import blobGeneratorImage from "../pages/apps/blobGenerator/images/blob-generator-preview.png";
+import { carouselSlides } from "../pages/apps/cinematicCarousel/data";
 
 const apps = [
     {
@@ -141,6 +142,19 @@ const apps = [
         to: "/apps/blob-generator",
         features: ["Live shape preview", "Independent corner radii", "Copy-ready CSS"],
         action: "Try Blob Generator",
+    },
+    {
+        number: "11",
+        level: "CREATIVE",
+        title: "Cinematic Carousel UI",
+        description:
+            "Explore a cinematic, responsive carousel with autoplay, keyboard and swipe controls, reduced-motion support, and a developer details modal.",
+        image: carouselSlides[0].image,
+        imageAlt: "A star-filled mountain landscape from the cinematic carousel",
+        icon: FiFilm,
+        to: "/apps/cinematic-carousel-ui",
+        features: ["Autoplay and pause", "Keyboard and swipe controls", "Reduced-motion support"],
+        action: "Try Cinematic Carousel",
     },
 ];
 
