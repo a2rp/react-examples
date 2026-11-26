@@ -32,6 +32,7 @@ function App() {
         "/apps/git-command-explorer",
         "/apps/hello-react-counter",
         "/apps/hello-world-react",
+        "/apps/html-colors",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

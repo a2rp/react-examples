@@ -34,6 +34,7 @@ import fontPairStudioImage from "../pages/apps/fontPairStudio/screenshot.png";
 import gitCommandExplorerImage from "../pages/apps/gitCommandExplorer/screenshot.png";
 import helloReactCounterImage from "../pages/apps/helloReactCounter/screenshot.png";
 import helloWorldReactImage from "../pages/apps/helloWorldReact/screenshot.png";
+import htmlColorsImage from "../pages/apps/htmlColors/app/screenshot.png";
 
 const apps = [
     {
@@ -476,6 +477,19 @@ const apps = [
         to: "/apps/hello-world-react",
         features: ["Responsive navigation", "React documentation links", "Scroll-to-top control"],
         action: "Try Hello World React",
+    },
+    {
+        number: "35",
+        level: "UTILITY",
+        title: "HTML Colors",
+        description:
+            "Browse the 148 CSS named colors, adjust RGB channels, and copy matching RGB, HEX, HSL, or color-name values.",
+        image: htmlColorsImage,
+        imageAlt: "HTML Colors palette and converter preview",
+        icon: FiDroplet,
+        to: "/apps/html-colors",
+        features: ["148 CSS named colors", "Live RGB, HEX, and HSL values", "Copy-ready values"],
+        action: "Explore HTML Colors",
     },
 ];
 
