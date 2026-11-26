@@ -17,6 +17,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Clipboard Snippet Library - `/apps/clipboard-snippet-library`
 - Code Diff Viewer - `/apps/code-diff-viewer`
 - Color Contrast Checker - `/apps/color-contrast-checker`
+- Color Gradient Explorer - `/apps/color-gradient-explorer`
 
 ## Run locally
 

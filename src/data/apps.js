@@ -14,6 +14,7 @@ import { carouselSlides } from "../pages/apps/cinematicCarousel/data";
 import clipboardSnippetLibraryImage from "../pages/apps/clipboardSnippetLibrary/images/clipboard-snippet-library-preview.png";
 import codeDiffViewerImage from "../pages/apps/codeDiffViewer/images/code-diff-viewer-preview.png";
 import colorContrastCheckerImage from "../pages/apps/colorContrastChecker/images/color-contrast-checker-preview.png";
+import colorGradientExplorerImage from "../pages/apps/colorGradientExplorer/images/color-gradient-explorer-preview.png";
 
 const apps = [
     {
@@ -197,6 +198,19 @@ const apps = [
         to: "/apps/color-contrast-checker",
         features: ["Live contrast ratio", "AA and AAA results", "Local color calculations"],
         action: "Check Contrast",
+    },
+    {
+        number: "15",
+        level: "CREATIVE",
+        title: "Color Gradient Explorer",
+        description:
+            "Build linear and radial gradients, tune color stops, save favorites in your browser, and copy ready-to-use CSS.",
+        image: colorGradientExplorerImage,
+        imageAlt: "Color Gradient Explorer with an editable gradient preview and color controls",
+        icon: FiDroplet,
+        to: "/apps/color-gradient-explorer",
+        features: ["Linear and radial gradients", "Two to five color stops", "Save and copy CSS"],
+        action: "Explore Gradients",
     },
 ];
 

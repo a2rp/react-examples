@@ -13,6 +13,7 @@ function App() {
         "/apps/clipboard-snippet-library",
         "/apps/code-diff-viewer",
         "/apps/color-contrast-checker",
+        "/apps/color-gradient-explorer",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

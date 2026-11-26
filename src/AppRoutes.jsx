@@ -19,6 +19,7 @@ const CinematicCarouselPage = lazy(() => import("./pages/apps/cinematicCarousel/
 const ClipboardSnippetLibraryPage = lazy(() => import("./pages/apps/clipboardSnippetLibrary/index.jsx"));
 const CodeDiffViewerPage = lazy(() => import("./pages/apps/codeDiffViewer/index.jsx"));
 const ColorContrastCheckerPage = lazy(() => import("./pages/apps/colorContrastChecker/index.jsx"));
+const ColorGradientExplorerPage = lazy(() => import("./pages/apps/colorGradientExplorer/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -46,6 +47,7 @@ function AppRoutes() {
                     <Route path="clipboard-snippet-library" element={<ClipboardSnippetLibraryPage />} />
                     <Route path="code-diff-viewer" element={<CodeDiffViewerPage />} />
                     <Route path="color-contrast-checker" element={<ColorContrastCheckerPage />} />
+                    <Route path="color-gradient-explorer" element={<ColorGradientExplorerPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
