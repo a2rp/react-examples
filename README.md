@@ -31,6 +31,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - FontPair Studio - `/apps/fontpair-studio`
 - Git Command Explorer - `/apps/git-command-explorer`
 - Hello React Counter - `/apps/hello-react-counter`
+- Hello World React - `/apps/hello-world-react`
 
 - Digital Clock - `/apps/digital-clock`
 

@@ -11,6 +11,7 @@ const AnalogClockPage = lazy(() => import("./pages/apps/analog-clock/index.jsx")
 const DigitalClockPage = lazy(() => import("./pages/apps/digitalClock/index.jsx"));
 const HelloReactPage = lazy(() => import("./pages/apps/helloReact/index.jsx"));
 const HelloReactCounterPage = lazy(() => import("./pages/apps/helloReactCounter/index.jsx"));
+const HelloWorldReactPage = lazy(() => import("./pages/apps/helloWorldReact/index.jsx"));
 const BasicThemedAppPage = lazy(() => import("./pages/apps/basicThemedApp/index.jsx"));
 const AvataarGeneratorPage = lazy(() => import("./pages/apps/avataarGenerator/index.jsx"));
 const RandomAvataarsPage = lazy(() => import("./pages/apps/randomAvataars/index.jsx"));
@@ -57,6 +58,7 @@ function AppRoutes() {
                     <Route path="digital-clock" element={<DigitalClockPage />} />
                     <Route path="hello-react" element={<HelloReactPage />} />
                     <Route path="hello-react-counter" element={<HelloReactCounterPage />} />
+                    <Route path="hello-world-react" element={<HelloWorldReactPage />} />
                     <Route path="basic-themed-app" element={<BasicThemedAppPage />} />
                     <Route path="avataar-generator" element={<AvataarGeneratorPage />} />
                     <Route path="random-avataars" element={<RandomAvataarsPage />} />

@@ -31,6 +31,7 @@ function App() {
         "/apps/fontpair-studio",
         "/apps/git-command-explorer",
         "/apps/hello-react-counter",
+        "/apps/hello-world-react",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

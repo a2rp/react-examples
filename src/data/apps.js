@@ -33,6 +33,7 @@ import flashcardStudyToolImage from "../pages/apps/flashcardStudyTool/screenshot
 import fontPairStudioImage from "../pages/apps/fontPairStudio/screenshot.png";
 import gitCommandExplorerImage from "../pages/apps/gitCommandExplorer/screenshot.png";
 import helloReactCounterImage from "../pages/apps/helloReactCounter/screenshot.png";
+import helloWorldReactImage from "../pages/apps/helloWorldReact/screenshot.png";
 
 const apps = [
     {
@@ -462,6 +463,19 @@ const apps = [
         to: "/apps/hello-react-counter",
         features: ["Interactive counter", "Reset control", "Responsive layout"],
         action: "Try Hello React Counter",
+    },
+    {
+        number: "34",
+        level: "FOUNDATION",
+        title: "Hello World React",
+        description:
+            "A clean React starter landing page with responsive navigation, React docs links, and a polished footer.",
+        image: helloWorldReactImage,
+        imageAlt: "Hello World React starter landing page preview",
+        icon: FiCode,
+        to: "/apps/hello-world-react",
+        features: ["Responsive navigation", "React documentation links", "Scroll-to-top control"],
+        action: "Try Hello World React",
     },
 ];
 
