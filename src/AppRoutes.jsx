@@ -34,6 +34,7 @@ const DynamicTabsPage = lazy(() => import("./pages/apps/dynamicTabs/index.jsx"))
 const EmiCalculatorPage = lazy(() => import("./pages/apps/emiCalculator/index.jsx"));
 const FileSizeVisualizerPage = lazy(() => import("./pages/apps/fileSizeVisualizer/index.jsx"));
 const FlashcardStudyToolPage = lazy(() => import("./pages/apps/flashcardStudyTool/index.jsx"));
+const FontPairStudioPage = lazy(() => import("./pages/apps/fontPairStudio/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -76,6 +77,7 @@ function AppRoutes() {
                     <Route path="emi-calculator" element={<EmiCalculatorPage />} />
                     <Route path="file-size-visualizer" element={<FileSizeVisualizerPage />} />
                     <Route path="flashcard-study-tool" element={<FlashcardStudyToolPage />} />
+                    <Route path="fontpair-studio" element={<FontPairStudioPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

@@ -29,6 +29,7 @@ import dynamicTabsImage from "../pages/apps/dynamicTabs/screenshot.png";
 import emiCalculatorImage from "../pages/apps/emiCalculator/screenshot.png";
 import fileSizeVisualizerImage from "../pages/apps/fileSizeVisualizer/screenshot.png";
 import flashcardStudyToolImage from "../pages/apps/flashcardStudyTool/screenshot.png";
+import fontPairStudioImage from "../pages/apps/fontPairStudio/screenshot.png";
 
 const apps = [
     {
@@ -407,6 +408,19 @@ const apps = [
         to: "/apps/flashcard-study-tool",
         features: ["Flip to reveal answers", "Track known cards", "Create custom cards"],
         action: "Study with Recall",
+    },
+    {
+        number: "30",
+        level: "DESIGN",
+        title: "FontPair Studio",
+        description:
+            "Explore curated Google Font combinations with live interface previews, practical filters, CSS snippets, and a saved shortlist.",
+        image: fontPairStudioImage,
+        imageAlt: "FontPair Studio showing a curated heading and body font pairing",
+        icon: FiEye,
+        to: "/apps/fontpair-studio",
+        features: ["Live font previews", "CSS snippet copy", "Saved favorites"],
+        action: "Explore Font Pairs",
     },
 ];
 

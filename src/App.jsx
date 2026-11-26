@@ -28,6 +28,7 @@ function App() {
         "/apps/emi-calculator",
         "/apps/file-size-visualizer",
         "/apps/flashcard-study-tool",
+        "/apps/fontpair-studio",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 
