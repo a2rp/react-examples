@@ -26,6 +26,7 @@ const CronExpressionBuilderPage = lazy(() => import("./pages/apps/cronExpression
 const CssGradientMakerPage = lazy(() => import("./pages/apps/cssGradientMaker/index.jsx"));
 const CurrencyConverterPage = lazy(() => import("./pages/apps/currencyConverter/index.jsx"));
 const DailyPlannerPage = lazy(() => import("./pages/apps/dailyPlanner/index.jsx"));
+const DateCountdownToolPage = lazy(() => import("./pages/apps/dateCountdownTool/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -60,6 +61,7 @@ function AppRoutes() {
                     <Route path="css-gradient-maker" element={<CssGradientMakerPage />} />
                     <Route path="currency-converter" element={<CurrencyConverterPage />} />
                     <Route path="daily-planner" element={<DailyPlannerPage />} />
+                    <Route path="date-countdown-tool" element={<DateCountdownToolPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

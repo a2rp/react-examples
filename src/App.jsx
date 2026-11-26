@@ -20,6 +20,7 @@ function App() {
         "/apps/css-gradient-maker",
         "/apps/currency-converter",
         "/apps/daily-planner",
+        "/apps/date-countdown-tool",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

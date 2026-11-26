@@ -21,6 +21,7 @@ import cronExpressionBuilderImage from "../pages/apps/cronExpressionBuilder/imag
 import cssGradientMakerImage from "../pages/apps/cssGradientMaker/images/css-gradient-maker-preview.png";
 import currencyConverterImage from "../pages/apps/currencyConverter/images/currency-converter-preview.svg";
 import dailyPlannerImage from "../pages/apps/dailyPlanner/screenshot.png";
+import dateCountdownToolImage from "../pages/apps/dateCountdownTool/screenshot.png";
 
 const apps = [
     {
@@ -295,6 +296,19 @@ const apps = [
         to: "/apps/daily-planner",
         features: ["Date-specific schedules", "Timed task blocks", "Browser-saved notes"],
         action: "Plan Your Day",
+    },
+    {
+        number: "22",
+        level: "UTILITY",
+        title: "Date Countdown Tool",
+        description:
+            "Track important dates with live countdowns, elapsed-time views, and a browser-saved event list.",
+        image: dateCountdownToolImage,
+        imageAlt: "Date Countdown Tool with a live timer and saved event list",
+        icon: FiClock,
+        to: "/apps/date-countdown-tool",
+        features: ["Live countdowns", "Past-event elapsed time", "Local event storage"],
+        action: "Track a Date",
     },
 ];
 
