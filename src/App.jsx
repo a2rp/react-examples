@@ -12,6 +12,7 @@ function App() {
         "/apps/cinematic-carousel-ui",
         "/apps/clipboard-snippet-library",
         "/apps/code-diff-viewer",
+        "/apps/color-contrast-checker",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

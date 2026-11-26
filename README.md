@@ -16,6 +16,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Cinematic Carousel UI - `/apps/cinematic-carousel-ui`
 - Clipboard Snippet Library - `/apps/clipboard-snippet-library`
 - Code Diff Viewer - `/apps/code-diff-viewer`
+- Color Contrast Checker - `/apps/color-contrast-checker`
 
 ## Run locally
 

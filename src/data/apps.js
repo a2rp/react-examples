@@ -1,4 +1,4 @@
-import { FiCalendar, FiClipboard, FiClock, FiCode, FiDroplet, FiFilm, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiCalendar, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -13,6 +13,7 @@ import blobGeneratorImage from "../pages/apps/blobGenerator/images/blob-generato
 import { carouselSlides } from "../pages/apps/cinematicCarousel/data";
 import clipboardSnippetLibraryImage from "../pages/apps/clipboardSnippetLibrary/images/clipboard-snippet-library-preview.png";
 import codeDiffViewerImage from "../pages/apps/codeDiffViewer/images/code-diff-viewer-preview.png";
+import colorContrastCheckerImage from "../pages/apps/colorContrastChecker/images/color-contrast-checker-preview.png";
 
 const apps = [
     {
@@ -183,6 +184,19 @@ const apps = [
         to: "/apps/code-diff-viewer",
         features: ["Line-by-line diff", "Whitespace option", "Copyable summary"],
         action: "Compare Text",
+    },
+    {
+        number: "14",
+        level: "UTILITY",
+        title: "Color Contrast Checker",
+        description:
+            "Check foreground and background colors against WCAG AA and AAA text contrast targets, with live previews and ratio feedback.",
+        image: colorContrastCheckerImage,
+        imageAlt: "Color Contrast Checker showing foreground and background samples",
+        icon: FiEye,
+        to: "/apps/color-contrast-checker",
+        features: ["Live contrast ratio", "AA and AAA results", "Local color calculations"],
+        action: "Check Contrast",
     },
 ];
 
