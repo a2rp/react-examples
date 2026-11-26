@@ -4,22 +4,27 @@ import styles from "./style.module.css";
 
 const hourLabels = Array.from({ length: 12 }, (_, index) => (index === 0 ? 12 : index));
 const minuteMarks = Array.from({ length: 60 }, (_, index) => index);
-const dateFormatter = new Intl.DateTimeFormat("en-IN", {
+const dateFormatter = new Intl.DateTimeFormat(undefined, {
     weekday: "long",
     day: "2-digit",
     month: "long",
     year: "numeric",
 });
+const timeFormatter = new Intl.DateTimeFormat(undefined, {
+    hour: "numeric",
+    minute: "2-digit",
+    second: "2-digit",
+});
+const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "Local time";
 
 function getClockInfo(date) {
-    const hours = date.getHours();
-    const displayHours = hours % 12 || 12;
+    const timeParts = Object.fromEntries(
+        timeFormatter.formatToParts(date).map(({ type, value }) => [type, value]),
+    );
 
     return {
-        time: [displayHours, date.getMinutes(), date.getSeconds()]
-            .map((value) => String(value).padStart(2, "0"))
-            .join(":"),
-        period: hours >= 12 ? "PM" : "AM",
+        time: [timeParts.hour, timeParts.minute, timeParts.second].filter(Boolean).join(":"),
+        period: timeParts.dayPeriod || "",
         date: dateFormatter.format(date),
         iso: date.toISOString(),
     };
@@ -120,12 +125,20 @@ function AnalogClockPage() {
                             <time className={styles.digitalTime} dateTime={clockInfo.iso}>
                                 {clockInfo.time}
                             </time>
-                            <span className={styles.period}>{clockInfo.period}</span>
+                            {clockInfo.period && (
+                                <span className={styles.period}>{clockInfo.period}</span>
+                            )}
                         </div>
                         <p className={styles.currentDate}>{clockInfo.date}</p>
-                        <div className={styles.status}>
+                        <div
+                            className={styles.status}
+                            role="group"
+                            aria-label={`Local time zone: ${timeZone}`}
+                        >
                             <span className={styles.statusDot} aria-hidden="true" />
                             <span>Local time</span>
+                            <span className={styles.statusDivider} aria-hidden="true">·</span>
+                            <span className={styles.timeZone}>{timeZone}</span>
                         </div>
                     </div>
                 </div>

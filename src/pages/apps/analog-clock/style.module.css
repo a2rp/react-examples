@@ -220,9 +220,11 @@
 
                 .status {
                     margin-top: 17px;
+                    max-width: 100%;
                     padding: 8px 12px;
                     display: inline-flex;
                     align-items: center;
+                    flex-wrap: wrap;
                     gap: 8px;
                     border: 1px solid rgba(255, 255, 255, 0.08);
                     border-radius: 999px;
@@ -236,6 +238,16 @@
                         border-radius: 50%;
                         background: #a8c7ff;
                         box-shadow: 0 0 10px rgba(168, 199, 255, 0.6);
+                    }
+
+                    .statusDivider {
+                        color: #687486;
+                    }
+
+                    .timeZone {
+                        overflow-wrap: anywhere;
+                        color: #d4dfed;
+                        font-variant-numeric: tabular-nums;
                     }
                 }
             }

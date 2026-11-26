@@ -40,12 +40,12 @@ const apps = [
         level: "UTILITY",
         title: "Analog Clock",
         description:
-            "A real-time local clock with smoothly moving hands, digital time, and date.",
+            "A real-time local clock with smoothly moving hands, locale-aware date and time, and your device time zone.",
         image: analogClockImage,
         imageAlt: "Analog clock with a digital time and date display",
         icon: FiClock,
         to: "/apps/analog-clock",
-        features: ["Live local time", "Smooth hand movement", "Responsive dial"],
+        features: ["Locale-aware time and date", "Device time zone", "Smooth hand movement"],
         action: "Try Analog Clock",
     },
     {
