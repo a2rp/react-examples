@@ -1,0 +1,40 @@
+.app-shell {
+    --ink: #1d3028;
+    --muted: #687a70;
+    --paper: #f3f5ef;
+    --card: #fff;
+    --accent: #157353;
+    --line: #dce5dd;
+
+    min-height: 100vh;
+    color: var(--ink);
+    background: var(--paper);
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    button,
+    input,
+    a {
+        color: inherit;
+        font: inherit;
+    }
+
+    a { text-decoration: none; }
+
+    .page-content {
+        width: min(1240px, calc(100% - 56px));
+        margin: 0 auto;
+        padding: 100px 0 64px;
+
+        @media (max-width: 680px) {
+            width: calc(100% - 32px);
+            padding-top: 88px;
+            padding-bottom: 40px;
+        }
+    }
+}

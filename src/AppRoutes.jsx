@@ -31,6 +31,7 @@ const DesignTokenEditorPage = lazy(() => import("./pages/apps/designTokenEditor/
 const DictionaryPage = lazy(() => import("./pages/apps/dictionary/index.jsx"));
 const DropdownProPage = lazy(() => import("./pages/apps/dropdownPro/index.jsx"));
 const DynamicTabsPage = lazy(() => import("./pages/apps/dynamicTabs/index.jsx"));
+const EmiCalculatorPage = lazy(() => import("./pages/apps/emiCalculator/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -70,6 +71,7 @@ function AppRoutes() {
                     <Route path="dictionary" element={<DictionaryPage />} />
                     <Route path="dropdown-pro" element={<DropdownProPage />} />
                     <Route path="dynamic-tabs" element={<DynamicTabsPage />} />
+                    <Route path="emi-calculator" element={<EmiCalculatorPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

@@ -25,6 +25,7 @@ function App() {
         "/apps/dictionary",
         "/apps/dropdown-pro",
         "/apps/dynamic-tabs",
+        "/apps/emi-calculator",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

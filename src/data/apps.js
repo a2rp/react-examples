@@ -1,4 +1,4 @@
-import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiPercent, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -26,6 +26,7 @@ import designTokenEditorImage from "../pages/apps/designTokenEditor/screenshot.p
 import dictionaryImage from "../pages/apps/dictionary/screenshot.png";
 import dropdownProImage from "../pages/apps/dropdownPro/screenshot.png";
 import dynamicTabsImage from "../pages/apps/dynamicTabs/screenshot.png";
+import emiCalculatorImage from "../pages/apps/emiCalculator/screenshot.png";
 
 const apps = [
     {
@@ -365,6 +366,19 @@ const apps = [
         to: "/apps/dynamic-tabs",
         features: ["Five paradigm views", "Keyboard-accessible tabs", "Local example data"],
         action: "Compare Paradigms",
+    },
+    {
+        number: "27",
+        level: "CALCULATOR",
+        title: "EMI Calculator",
+        description:
+            "Estimate a reducing-balance monthly loan payment and see how principal and interest change across the first six payments.",
+        image: emiCalculatorImage,
+        imageAlt: "ClearRate EMI Calculator showing estimated payment and loan breakdown",
+        icon: FiPercent,
+        to: "/apps/emi-calculator",
+        features: ["Live EMI estimate", "Principal and interest split", "Six-payment schedule"],
+        action: "Estimate a Payment",
     },
 ];
 
