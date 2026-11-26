@@ -16,6 +16,7 @@ function App() {
         "/apps/color-gradient-explorer",
         "/apps/color-palette-studio",
         "/apps/color-picker",
+        "/apps/cron-expression-builder",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

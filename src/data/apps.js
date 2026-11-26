@@ -17,6 +17,7 @@ import colorContrastCheckerImage from "../pages/apps/colorContrastChecker/images
 import colorGradientExplorerImage from "../pages/apps/colorGradientExplorer/images/color-gradient-explorer-preview.png";
 import colorPaletteStudioImage from "../pages/apps/colorPaletteStudio/images/color-palette-studio-preview.png";
 import colorPickerImage from "../pages/apps/colorPicker/images/color-picker-preview.png";
+import cronExpressionBuilderImage from "../pages/apps/cronExpressionBuilder/images/cron-expression-builder-preview.png";
 
 const apps = [
     {
@@ -239,6 +240,19 @@ const apps = [
         to: "/apps/color-picker",
         features: ["Named CSS colors", "HEX, RGB, and HSL", "Browser-local selection"],
         action: "Pick a Color",
+    },
+    {
+        number: "18",
+        level: "UTILITY",
+        title: "Cron Expression Builder",
+        description:
+            "Build and validate five-field cron schedules, read a plain-language explanation, and preview upcoming run times in your local timezone.",
+        image: cronExpressionBuilderImage,
+        imageAlt: "Cron Expression Builder with five schedule fields and upcoming runs",
+        icon: FiClock,
+        to: "/apps/cron-expression-builder",
+        features: ["Five-field syntax", "Plain-language explanations", "Upcoming local runs"],
+        action: "Build a Schedule",
     },
 ];
 
