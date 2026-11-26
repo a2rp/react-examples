@@ -30,6 +30,8 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Flashcard Study Tool - `/apps/flashcard-study-tool`
 - FontPair Studio - `/apps/fontpair-studio`
 
+- Digital Clock - `/apps/digital-clock`
+
 ## Run locally
 
 ```bash

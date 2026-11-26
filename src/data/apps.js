@@ -3,6 +3,7 @@ import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, Fi
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
 import analogClockImage from "../pages/apps/analog-clock/images/analog-clock-preview.png";
+import digitalClockImage from "../pages/apps/digitalClock/images/digital-clock-preview.png";
 import avataarGeneratorImage from "../pages/apps/avataarGenerator/images/avataar-generator-preview.png";
 import randomAvataarsImage from "../pages/apps/randomAvataars/images/random-avataars-preview.png";
 import apiRequestWorkbenchImage from "../pages/apps/apiRequestWorkbench/images/api-request-workbench-preview.png";
@@ -421,6 +422,18 @@ const apps = [
         to: "/apps/fontpair-studio",
         features: ["Live font previews", "CSS snippet copy", "Saved favorites"],
         action: "Explore Font Pairs",
+    },
+    {
+        number: "31",
+        level: "UTILITY",
+        title: "Digital Clock",
+        description: "Track live time and date in your local zone or select another timezone.",
+        image: digitalClockImage,
+        imageAlt: "Digital clock with live hours, minutes, seconds, and timezone selector",
+        icon: FiClock,
+        to: "/apps/digital-clock",
+        features: ["Live time and date", "Timezone selector", "Browser Intl formatting"],
+        action: "Open Digital Clock",
     },
 ];
 
