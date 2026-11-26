@@ -1,4 +1,4 @@
-import { FiClock, FiCode, FiLayers, FiSmile, FiZap } from "react-icons/fi";
+import { FiCalendar, FiClock, FiCode, FiLayers, FiSmile, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -7,6 +7,7 @@ import avataarGeneratorImage from "../pages/apps/avataarGenerator/images/avataar
 import randomAvataarsImage from "../pages/apps/randomAvataars/images/random-avataars-preview.png";
 import apiRequestWorkbenchImage from "../pages/apps/apiRequestWorkbench/images/api-request-workbench-preview.png";
 import base64ConverterImage from "../pages/apps/base64Converter/images/base64-converter-preview.png";
+import helloReactImage from "../pages/apps/helloReact/images/hello-react-preview.png";
 
 const apps = [
     {
@@ -99,6 +100,19 @@ const apps = [
         to: "/apps/base64-converter",
         features: ["UTF-8 text conversion", "URL-safe output", "Private in-browser processing"],
         action: "Try Base64 Converter",
+    },
+    {
+        number: "08",
+        level: "FOUNDATION",
+        title: "Hello React",
+        description:
+            "A friendly React starter screen with a live browser date, time, and time zone.",
+        image: helloReactImage,
+        imageAlt: "Hello React app with a live local clock and date display",
+        icon: FiCalendar,
+        to: "/apps/hello-react",
+        features: ["Live date and time", "Browser locale and time zone", "Clean React lifecycle"],
+        action: "Try Hello React",
     },
 ];
 

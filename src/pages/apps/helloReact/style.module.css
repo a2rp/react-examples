@@ -1,0 +1,410 @@
+.page {
+    min-height: calc(100vh - 77px);
+    color: #f4f7fb;
+
+    .content {
+        width: min(1160px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: clamp(42px, 7vw, 82px) 0 96px;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(380px, 0.9fr);
+        align-items: center;
+        gap: clamp(36px, 7vw, 92px);
+
+        > * {
+            min-width: 0;
+        }
+    }
+
+    .heroCopy {
+        .eyebrow {
+            margin: 0 0 14px;
+            color: #83ccff;
+            font-size: 0.74rem;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .title {
+            max-width: 650px;
+            margin: 0 0 22px;
+            color: #ffffff;
+            font-size: clamp(3rem, 7vw, 6.3rem);
+            letter-spacing: -0.08em;
+            line-height: 0.94;
+
+            span {
+                color: #83ccff;
+            }
+        }
+
+        .intro {
+            max-width: 510px;
+            margin: 0 0 30px;
+            color: #b7c8da;
+            font-size: clamp(1rem, 1.6vw, 1.12rem);
+            line-height: 1.75;
+        }
+    }
+
+    .heroActions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        .primaryAction,
+        .secondaryAction {
+            min-height: 46px;
+            padding: 12px 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            font-size: 0.88rem;
+            font-weight: 750;
+            text-decoration: none;
+            transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.26);
+            }
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        .primaryAction {
+            color: #062039;
+            background: #83ccff;
+
+            &:hover {
+                border-color: #c6e9ff;
+            }
+        }
+
+        .secondaryAction {
+            border-color: rgba(152, 193, 230, 0.3);
+            color: #f5f9ff;
+            background: rgba(13, 29, 49, 0.7);
+
+            &:hover {
+                border-color: rgba(131, 204, 255, 0.65);
+            }
+        }
+    }
+
+    .clockCard {
+        position: relative;
+        overflow: hidden;
+        padding: clamp(24px, 4vw, 38px);
+        border: 1px solid rgba(125, 187, 255, 0.38);
+        border-radius: 24px;
+        background: linear-gradient(145deg, rgba(21, 52, 82, 0.92), rgba(10, 27, 46, 0.94));
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.34);
+
+        &::after {
+            position: absolute;
+            top: -58px;
+            right: -38px;
+            width: 148px;
+            height: 148px;
+            border: 1px solid rgba(125, 187, 255, 0.16);
+            border-radius: 50%;
+            content: "";
+        }
+
+        .clockHeading {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .iconBadge {
+            display: inline-grid;
+            width: 40px;
+            height: 40px;
+            flex: 0 0 auto;
+            place-items: center;
+            border: 1px solid rgba(125, 187, 255, 0.34);
+            border-radius: 12px;
+            color: #83ccff;
+            background: rgba(5, 21, 38, 0.5);
+
+            svg {
+                width: 19px;
+                height: 19px;
+            }
+        }
+
+        .cardLabel,
+        .cardCaption {
+            margin: 0;
+        }
+
+        .cardLabel {
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-weight: 800;
+        }
+
+        .cardCaption {
+            margin-top: 3px;
+            color: #9eb2c6;
+            font-size: 0.75rem;
+        }
+
+        .liveLabel {
+            margin-left: auto;
+            padding: 7px 9px;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            border: 1px solid rgba(125, 187, 255, 0.24);
+            border-radius: 999px;
+            color: #b9e6ff;
+            font-size: 0.72rem;
+            font-weight: 700;
+
+            span {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #62e0a2;
+                box-shadow: 0 0 0 5px rgba(98, 224, 162, 0.12);
+            }
+        }
+
+        .clockTime {
+            position: relative;
+            z-index: 1;
+            display: block;
+            margin-top: 42px;
+            color: #ffffff;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-size: clamp(2rem, 5.4vw, 4.45rem);
+            font-variant-numeric: tabular-nums;
+            font-weight: 750;
+            letter-spacing: -0.09em;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .clockDate {
+            margin: 19px 0 0;
+            color: #d7e8f7;
+            font-size: clamp(1rem, 2vw, 1.16rem);
+        }
+
+        .clockZone,
+        .clockStatus {
+            margin: 10px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #9eb2c6;
+            font-size: 0.86rem;
+
+            svg {
+                flex: 0 0 auto;
+                color: #83ccff;
+            }
+        }
+
+        .clockZone span {
+            overflow-wrap: anywhere;
+        }
+
+        .clockStatus {
+            width: fit-content;
+            margin-top: 27px;
+            padding: 9px 12px;
+            border-radius: 999px;
+            background: rgba(5, 21, 38, 0.72);
+            color: #b9dcf4;
+        }
+    }
+
+    .details {
+        padding-top: clamp(86px, 11vw, 126px);
+
+        .sectionHeading {
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .eyebrow {
+            margin: 0 0 12px;
+            color: #83ccff;
+            font-size: 0.74rem;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .sectionTitle {
+            margin: 0;
+            color: #ffffff;
+            font-size: clamp(2rem, 4vw, 3.9rem);
+            letter-spacing: -0.06em;
+            line-height: 1;
+        }
+
+        .featureGrid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .featureCard {
+            min-height: 210px;
+            padding: 24px;
+            border: 1px solid rgba(152, 193, 230, 0.2);
+            border-radius: 18px;
+            background: rgba(13, 29, 49, 0.82);
+            transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+
+            &:hover {
+                transform: translateY(-3px);
+                border-color: rgba(125, 187, 255, 0.65);
+                box-shadow: 0 22px 52px rgba(0, 0, 0, 0.3);
+            }
+
+            .iconBadge {
+                display: inline-grid;
+                width: 40px;
+                height: 40px;
+                place-items: center;
+                border: 1px solid rgba(125, 187, 255, 0.34);
+                border-radius: 12px;
+                color: #83ccff;
+                background: rgba(5, 21, 38, 0.5);
+
+                svg {
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+
+            h3 {
+                margin: 28px 0 10px;
+                color: #ffffff;
+                font-size: 1.06rem;
+            }
+
+            p {
+                margin: 0;
+                color: #aabed2;
+                font-size: 0.92rem;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    .messageCard {
+        margin-top: 88px;
+        padding: clamp(24px, 5vw, 48px);
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        align-items: start;
+        gap: 18px;
+        border: 1px solid rgba(152, 193, 230, 0.2);
+        border-radius: 22px;
+        background: rgba(16, 37, 61, 0.8);
+
+        .messageIcon {
+            display: inline-grid;
+            width: 46px;
+            height: 46px;
+            place-items: center;
+            border: 1px solid rgba(125, 187, 255, 0.34);
+            border-radius: 12px;
+            color: #83ccff;
+            background: rgba(5, 21, 38, 0.5);
+
+            svg {
+                width: 19px;
+                height: 19px;
+            }
+        }
+
+        .eyebrow {
+            margin: 0 0 12px;
+            color: #83ccff;
+            font-size: 0.74rem;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .messageTitle {
+            max-width: 680px;
+            margin: 0 0 16px;
+            color: #ffffff;
+            font-size: clamp(1.8rem, 4vw, 3.2rem);
+            letter-spacing: -0.06em;
+            line-height: 1;
+        }
+
+        .messageCopy {
+            max-width: 650px;
+            margin: 0;
+            color: #aabed2;
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+    }
+
+    @media (max-width: 820px) {
+        .hero {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 48px;
+        }
+    }
+
+    @media (max-width: 620px) {
+        .content {
+            width: calc(100% - 28px);
+            padding-top: 36px;
+            padding-bottom: 62px;
+        }
+
+        .heroCopy {
+            .title {
+                font-size: clamp(2.7rem, 15vw, 4.8rem);
+            }
+        }
+
+        .clockCard {
+            padding: 24px 18px;
+
+            .clockTime {
+                font-size: clamp(1.55rem, 8.3vw, 3.2rem);
+            }
+        }
+
+        .details {
+            .featureGrid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .featureCard {
+                min-height: auto;
+            }
+        }
+
+        .messageCard {
+            grid-template-columns: minmax(0, 1fr);
+            margin-top: 72px;
+        }
+    }
+}
