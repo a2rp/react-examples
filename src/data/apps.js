@@ -20,6 +20,7 @@ import colorPickerImage from "../pages/apps/colorPicker/images/color-picker-prev
 import cronExpressionBuilderImage from "../pages/apps/cronExpressionBuilder/images/cron-expression-builder-preview.png";
 import cssGradientMakerImage from "../pages/apps/cssGradientMaker/images/css-gradient-maker-preview.png";
 import currencyConverterImage from "../pages/apps/currencyConverter/images/currency-converter-preview.svg";
+import dailyPlannerImage from "../pages/apps/dailyPlanner/screenshot.png";
 
 const apps = [
     {
@@ -281,6 +282,19 @@ const apps = [
         to: "/apps/currency-converter",
         features: ["Reference exchange rates", "Currency pair swap", "Copyable result"],
         action: "Convert Currency",
+    },
+    {
+        number: "21",
+        level: "UTILITY",
+        title: "Daily Planner",
+        description:
+            "Plan a date-specific day, track timed tasks, and keep working notes saved in your browser.",
+        image: dailyPlannerImage,
+        imageAlt: "Daily Planner schedule with date navigation, task timeline, and notes panel",
+        icon: FiCalendar,
+        to: "/apps/daily-planner",
+        features: ["Date-specific schedules", "Timed task blocks", "Browser-saved notes"],
+        action: "Plan Your Day",
     },
 ];
 
