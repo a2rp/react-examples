@@ -27,6 +27,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - EMI Calculator - `/apps/emi-calculator`
 
 - File Size Visualizer - `/apps/file-size-visualizer`
+- Flashcard Study Tool - `/apps/flashcard-study-tool`
 
 ## Run locally
 

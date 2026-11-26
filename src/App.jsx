@@ -27,6 +27,7 @@ function App() {
         "/apps/dynamic-tabs",
         "/apps/emi-calculator",
         "/apps/file-size-visualizer",
+        "/apps/flashcard-study-tool",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

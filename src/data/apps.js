@@ -28,6 +28,7 @@ import dropdownProImage from "../pages/apps/dropdownPro/screenshot.png";
 import dynamicTabsImage from "../pages/apps/dynamicTabs/screenshot.png";
 import emiCalculatorImage from "../pages/apps/emiCalculator/screenshot.png";
 import fileSizeVisualizerImage from "../pages/apps/fileSizeVisualizer/screenshot.png";
+import flashcardStudyToolImage from "../pages/apps/flashcardStudyTool/screenshot.png";
 
 const apps = [
     {
@@ -393,6 +394,19 @@ const apps = [
         to: "/apps/file-size-visualizer",
         features: ["Local metadata only", "Category size summaries", "JSON report export"],
         action: "Review File Sizes",
+    },
+    {
+        number: "29",
+        level: "LEARNING",
+        title: "Flashcard Study Tool",
+        description:
+            "Practice active recall with a personal question-and-answer deck, progress tracking, and cards saved in your browser.",
+        image: flashcardStudyToolImage,
+        imageAlt: "Recall flashcard study tool showing a question card and deck progress",
+        icon: FiBookOpen,
+        to: "/apps/flashcard-study-tool",
+        features: ["Flip to reveal answers", "Track known cards", "Create custom cards"],
+        action: "Study with Recall",
     },
 ];
 
