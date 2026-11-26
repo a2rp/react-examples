@@ -36,6 +36,7 @@ const EmiCalculatorPage = lazy(() => import("./pages/apps/emiCalculator/index.js
 const FileSizeVisualizerPage = lazy(() => import("./pages/apps/fileSizeVisualizer/index.jsx"));
 const FlashcardStudyToolPage = lazy(() => import("./pages/apps/flashcardStudyTool/index.jsx"));
 const FontPairStudioPage = lazy(() => import("./pages/apps/fontPairStudio/index.jsx"));
+const GitCommandExplorerPage = lazy(() => import("./pages/apps/gitCommandExplorer/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -80,6 +81,7 @@ function AppRoutes() {
                     <Route path="file-size-visualizer" element={<FileSizeVisualizerPage />} />
                     <Route path="flashcard-study-tool" element={<FlashcardStudyToolPage />} />
                     <Route path="fontpair-studio" element={<FontPairStudioPage />} />
+                    <Route path="git-command-explorer" element={<GitCommandExplorerPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

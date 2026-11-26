@@ -29,6 +29,7 @@ function App() {
         "/apps/file-size-visualizer",
         "/apps/flashcard-study-tool",
         "/apps/fontpair-studio",
+        "/apps/git-command-explorer",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

@@ -31,6 +31,7 @@ import emiCalculatorImage from "../pages/apps/emiCalculator/screenshot.png";
 import fileSizeVisualizerImage from "../pages/apps/fileSizeVisualizer/screenshot.png";
 import flashcardStudyToolImage from "../pages/apps/flashcardStudyTool/screenshot.png";
 import fontPairStudioImage from "../pages/apps/fontPairStudio/screenshot.png";
+import gitCommandExplorerImage from "../pages/apps/gitCommandExplorer/screenshot.png";
 
 const apps = [
     {
@@ -434,6 +435,19 @@ const apps = [
         to: "/apps/digital-clock",
         features: ["Live time and date", "Timezone selector", "Browser Intl formatting"],
         action: "Open Digital Clock",
+    },
+    {
+        number: "32",
+        level: "UTILITY",
+        title: "Git Command Explorer",
+        description:
+            "Find a Git command, understand its effects and risk, review safer alternatives, and copy it without executing anything.",
+        image: gitCommandExplorerImage,
+        imageAlt: "Git Command Explorer showing command search and risk guidance",
+        icon: FiCode,
+        to: "/apps/git-command-explorer",
+        features: ["Search 29 commands", "Risk guidance", "Copy without execution"],
+        action: "Explore Git Commands",
     },
 ];
 

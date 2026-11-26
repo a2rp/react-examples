@@ -29,6 +29,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - File Size Visualizer - `/apps/file-size-visualizer`
 - Flashcard Study Tool - `/apps/flashcard-study-tool`
 - FontPair Studio - `/apps/fontpair-studio`
+- Git Command Explorer - `/apps/git-command-explorer`
 
 - Digital Clock - `/apps/digital-clock`
 
