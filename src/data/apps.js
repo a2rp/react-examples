@@ -15,6 +15,7 @@ import clipboardSnippetLibraryImage from "../pages/apps/clipboardSnippetLibrary/
 import codeDiffViewerImage from "../pages/apps/codeDiffViewer/images/code-diff-viewer-preview.png";
 import colorContrastCheckerImage from "../pages/apps/colorContrastChecker/images/color-contrast-checker-preview.png";
 import colorGradientExplorerImage from "../pages/apps/colorGradientExplorer/images/color-gradient-explorer-preview.png";
+import colorPaletteStudioImage from "../pages/apps/colorPaletteStudio/images/color-palette-studio-preview.png";
 
 const apps = [
     {
@@ -211,6 +212,19 @@ const apps = [
         to: "/apps/color-gradient-explorer",
         features: ["Linear and radial gradients", "Two to five color stops", "Save and copy CSS"],
         action: "Explore Gradients",
+    },
+    {
+        number: "16",
+        level: "CREATIVE",
+        title: "Color Palette Studio",
+        description:
+            "Explore color harmony, refine five editable swatches, and preview the palette in a sample storefront.",
+        image: colorPaletteStudioImage,
+        imageAlt: "Color Palette Studio with editable swatches and a live storefront preview",
+        icon: FiDroplet,
+        to: "/apps/color-palette-studio",
+        features: ["Four harmony schemes", "Five editable colors", "Live storefront preview"],
+        action: "Build a Palette",
     },
 ];
 

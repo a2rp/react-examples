@@ -4,13 +4,13 @@ A collection of focused, interactive React projects. Each app has its own route 
 
 ## Projects
 
-- Accordion — `/apps/accordion`
-- Accordion Pro — `/apps/accordion-pro`
-- Analog Clock — `/apps/analog-clock`
-- Avataar Generator — `/apps/avataar-generator`
-- Random Avataars — `/apps/random-avataars`
-- API Request Workbench — `/apps/api-request-workbench`
-- Base64 Converter — `/apps/base64-converter`
+- Accordion â€” `/apps/accordion`
+- Accordion Pro â€” `/apps/accordion-pro`
+- Analog Clock â€” `/apps/analog-clock`
+- Avataar Generator â€” `/apps/avataar-generator`
+- Random Avataars â€” `/apps/random-avataars`
+- API Request Workbench â€” `/apps/api-request-workbench`
+- Base64 Converter â€” `/apps/base64-converter`
 - Basic Themed App - `/apps/basic-themed-app`
 - Blob Generator - `/apps/blob-generator`
 - Cinematic Carousel UI - `/apps/cinematic-carousel-ui`
@@ -18,6 +18,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Code Diff Viewer - `/apps/code-diff-viewer`
 - Color Contrast Checker - `/apps/color-contrast-checker`
 - Color Gradient Explorer - `/apps/color-gradient-explorer`
+- Color Palette Studio - `/apps/color-palette-studio`
 
 ## Run locally
 

@@ -20,6 +20,7 @@ const ClipboardSnippetLibraryPage = lazy(() => import("./pages/apps/clipboardSni
 const CodeDiffViewerPage = lazy(() => import("./pages/apps/codeDiffViewer/index.jsx"));
 const ColorContrastCheckerPage = lazy(() => import("./pages/apps/colorContrastChecker/index.jsx"));
 const ColorGradientExplorerPage = lazy(() => import("./pages/apps/colorGradientExplorer/index.jsx"));
+const ColorPaletteStudioPage = lazy(() => import("./pages/apps/colorPaletteStudio/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -48,6 +49,7 @@ function AppRoutes() {
                     <Route path="code-diff-viewer" element={<CodeDiffViewerPage />} />
                     <Route path="color-contrast-checker" element={<ColorContrastCheckerPage />} />
                     <Route path="color-gradient-explorer" element={<ColorGradientExplorerPage />} />
+                    <Route path="color-palette-studio" element={<ColorPaletteStudioPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
