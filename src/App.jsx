@@ -18,6 +18,7 @@ function App() {
         "/apps/color-picker",
         "/apps/cron-expression-builder",
         "/apps/css-gradient-maker",
+        "/apps/currency-converter",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

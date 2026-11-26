@@ -1,4 +1,4 @@
-import { FiCalendar, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiCalendar, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -19,6 +19,7 @@ import colorPaletteStudioImage from "../pages/apps/colorPaletteStudio/images/col
 import colorPickerImage from "../pages/apps/colorPicker/images/color-picker-preview.png";
 import cronExpressionBuilderImage from "../pages/apps/cronExpressionBuilder/images/cron-expression-builder-preview.png";
 import cssGradientMakerImage from "../pages/apps/cssGradientMaker/images/css-gradient-maker-preview.png";
+import currencyConverterImage from "../pages/apps/currencyConverter/images/currency-converter-preview.svg";
 
 const apps = [
     {
@@ -267,6 +268,19 @@ const apps = [
         to: "/apps/css-gradient-maker",
         features: ["Linear and radial gradients", "Editable color stops", "Copyable CSS"],
         action: "Make a Gradient",
+    },
+    {
+        number: "20",
+        level: "UTILITY",
+        title: "Currency Converter",
+        description:
+            "Convert between global currencies with published reference rates, inverse rates, and a quick currency swap.",
+        image: currencyConverterImage,
+        imageAlt: "Currency Converter showing USD to INR amount and reference conversion",
+        icon: FiRefreshCw,
+        to: "/apps/currency-converter",
+        features: ["Reference exchange rates", "Currency pair swap", "Copyable result"],
+        action: "Convert Currency",
     },
 ];
 
