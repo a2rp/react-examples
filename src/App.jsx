@@ -21,6 +21,7 @@ function App() {
         "/apps/currency-converter",
         "/apps/daily-planner",
         "/apps/date-countdown-tool",
+        "/apps/design-token-editor",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 

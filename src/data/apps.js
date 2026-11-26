@@ -22,6 +22,7 @@ import cssGradientMakerImage from "../pages/apps/cssGradientMaker/images/css-gra
 import currencyConverterImage from "../pages/apps/currencyConverter/images/currency-converter-preview.svg";
 import dailyPlannerImage from "../pages/apps/dailyPlanner/screenshot.png";
 import dateCountdownToolImage from "../pages/apps/dateCountdownTool/screenshot.png";
+import designTokenEditorImage from "../pages/apps/designTokenEditor/screenshot.png";
 
 const apps = [
     {
@@ -309,6 +310,19 @@ const apps = [
         to: "/apps/date-countdown-tool",
         features: ["Live countdowns", "Past-event elapsed time", "Local event storage"],
         action: "Track a Date",
+    },
+    {
+        number: "23",
+        level: "CREATIVE",
+        title: "Design Token Editor",
+        description:
+            "Create, organize, preview, and export reusable color, typography, spacing, radius, and shadow tokens.",
+        image: designTokenEditorImage,
+        imageAlt: "Design Token Editor workspace with a token board and live preview",
+        icon: FiLayers,
+        to: "/apps/design-token-editor",
+        features: ["Editable design tokens", "Live interface preview", "CSS and JSON export"],
+        action: "Edit Design Tokens",
     },
 ];
 
