@@ -1,4 +1,4 @@
-import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiLayers, FiPercent, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiHardDrive, FiLayers, FiPercent, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -27,6 +27,7 @@ import dictionaryImage from "../pages/apps/dictionary/screenshot.png";
 import dropdownProImage from "../pages/apps/dropdownPro/screenshot.png";
 import dynamicTabsImage from "../pages/apps/dynamicTabs/screenshot.png";
 import emiCalculatorImage from "../pages/apps/emiCalculator/screenshot.png";
+import fileSizeVisualizerImage from "../pages/apps/fileSizeVisualizer/screenshot.png";
 
 const apps = [
     {
@@ -379,6 +380,19 @@ const apps = [
         to: "/apps/emi-calculator",
         features: ["Live EMI estimate", "Principal and interest split", "Six-payment schedule"],
         action: "Estimate a Payment",
+    },
+    {
+        number: "28",
+        level: "UTILITY",
+        title: "File Size Visualizer",
+        description:
+            "Analyze file metadata locally, compare size categories, and export a clear report without uploading file contents.",
+        image: fileSizeVisualizerImage,
+        imageAlt: "File Size Visualizer showing a local file size report",
+        icon: FiHardDrive,
+        to: "/apps/file-size-visualizer",
+        features: ["Local metadata only", "Category size summaries", "JSON report export"],
+        action: "Review File Sizes",
     },
 ];
 

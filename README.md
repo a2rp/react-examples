@@ -26,6 +26,8 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Dynamic Tabs - `/apps/dynamic-tabs`
 - EMI Calculator - `/apps/emi-calculator`
 
+- File Size Visualizer - `/apps/file-size-visualizer`
+
 ## Run locally
 
 ```bash
