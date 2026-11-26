@@ -1,4 +1,4 @@
-import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiHardDrive, FiLayers, FiPercent, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiHardDrive, FiImage, FiLayers, FiPercent, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -37,6 +37,7 @@ import helloWorldReactImage from "../pages/apps/helloWorldReact/screenshot.png";
 import htmlColorsImage from "../pages/apps/htmlColors/app/screenshot.png";
 import httpStatusReferenceImage from "../pages/apps/httpStatusReference/app/screenshot.png";
 import iconLibraryBrowserImage from "../pages/apps/iconLibraryBrowser/app/screenshot.png";
+import imageCompressionPreviewImage from "../pages/apps/imageCompressionPreview/app/screenshot.png";
 
 const apps = [
     {
@@ -518,6 +519,19 @@ const apps = [
         to: "/apps/icon-library-browser",
         features: ["85 icons across three collections", "Search and favorites", "Copy React or SVG, download SVG"],
         action: "Browse Icons",
+    },
+    {
+        number: "38",
+        level: "UTILITY",
+        title: "Image Compression Preview",
+        description:
+            "Compare a browser-compressed JPEG or WebP copy, tune quality, and download the smaller file without changing the original.",
+        image: imageCompressionPreviewImage,
+        imageAlt: "Image Compression Preview with side-by-side file comparison and quality controls",
+        icon: FiImage,
+        to: "/apps/image-compression-preview",
+        features: ["Local browser encoding", "JPEG and WebP output", "Actual size comparison"],
+        action: "Compress an Image",
     },
 ];
 

@@ -35,6 +35,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - HTML Colors - `/apps/html-colors`
 - HTTP Status Reference - `/apps/http-status-reference`
 - Icon Library Browser - `/apps/icon-library-browser`
+- Image Compression Preview - `/apps/image-compression-preview`
 
 - Digital Clock - `/apps/digital-clock`
 
