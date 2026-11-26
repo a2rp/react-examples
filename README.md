@@ -33,6 +33,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Hello React Counter - `/apps/hello-react-counter`
 - Hello World React - `/apps/hello-world-react`
 - HTML Colors - `/apps/html-colors`
+- HTTP Status Reference - `/apps/http-status-reference`
 
 - Digital Clock - `/apps/digital-clock`
 

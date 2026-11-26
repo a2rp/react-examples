@@ -35,6 +35,7 @@ import gitCommandExplorerImage from "../pages/apps/gitCommandExplorer/screenshot
 import helloReactCounterImage from "../pages/apps/helloReactCounter/screenshot.png";
 import helloWorldReactImage from "../pages/apps/helloWorldReact/screenshot.png";
 import htmlColorsImage from "../pages/apps/htmlColors/app/screenshot.png";
+import httpStatusReferenceImage from "../pages/apps/httpStatusReference/app/screenshot.png";
 
 const apps = [
     {
@@ -490,6 +491,19 @@ const apps = [
         to: "/apps/html-colors",
         features: ["148 CSS named colors", "Live RGB, HEX, and HSL values", "Copy-ready values"],
         action: "Explore HTML Colors",
+    },
+    {
+        number: "36",
+        level: "UTILITY",
+        title: "HTTP Status Reference",
+        description:
+            "Search HTTP response codes, understand common causes, and get a practical next check with standards-based guidance.",
+        image: httpStatusReferenceImage,
+        imageAlt: "HTTP Status Reference with searchable response-code guidance",
+        icon: FiRefreshCw,
+        to: "/apps/http-status-reference",
+        features: ["42 status-code entries", "Search and class filters", "Copy codes and next-step guidance"],
+        action: "Explore HTTP Statuses",
     },
 ];
 

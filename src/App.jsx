@@ -33,6 +33,7 @@ function App() {
         "/apps/hello-react-counter",
         "/apps/hello-world-react",
         "/apps/html-colors",
+        "/apps/http-status-reference",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 
