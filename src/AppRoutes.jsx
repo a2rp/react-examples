@@ -16,6 +16,7 @@ const HtmlColorsPage = lazy(() => import("./pages/apps/htmlColors/app/src/App.js
 const HttpStatusReferencePage = lazy(() => import("./pages/apps/httpStatusReference/index.jsx"));
 const IconLibraryBrowserPage = lazy(() => import("./pages/apps/iconLibraryBrowser/index.jsx"));
 const ImageCompressionPreviewPage = lazy(() => import("./pages/apps/imageCompressionPreview/index.jsx"));
+const ImageSliderPage = lazy(() => import("./pages/apps/imageSlider/index.jsx"));
 const BasicThemedAppPage = lazy(() => import("./pages/apps/basicThemedApp/index.jsx"));
 const AvataarGeneratorPage = lazy(() => import("./pages/apps/avataarGenerator/index.jsx"));
 const RandomAvataarsPage = lazy(() => import("./pages/apps/randomAvataars/index.jsx"));
@@ -67,6 +68,7 @@ function AppRoutes() {
                     <Route path="http-status-reference" element={<HttpStatusReferencePage />} />
                     <Route path="icon-library-browser" element={<IconLibraryBrowserPage />} />
                     <Route path="image-compression-preview" element={<ImageCompressionPreviewPage />} />
+                    <Route path="image-slider" element={<ImageSliderPage />} />
                     <Route path="basic-themed-app" element={<BasicThemedAppPage />} />
                     <Route path="avataar-generator" element={<AvataarGeneratorPage />} />
                     <Route path="random-avataars" element={<RandomAvataarsPage />} />

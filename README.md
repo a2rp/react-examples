@@ -36,6 +36,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - HTTP Status Reference - `/apps/http-status-reference`
 - Icon Library Browser - `/apps/icon-library-browser`
 - Image Compression Preview - `/apps/image-compression-preview`
+- Image Slider - `/apps/image-slider`
 
 - Digital Clock - `/apps/digital-clock`
 

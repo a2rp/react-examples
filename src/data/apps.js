@@ -38,6 +38,7 @@ import htmlColorsImage from "../pages/apps/htmlColors/app/screenshot.png";
 import httpStatusReferenceImage from "../pages/apps/httpStatusReference/app/screenshot.png";
 import iconLibraryBrowserImage from "../pages/apps/iconLibraryBrowser/app/screenshot.png";
 import imageCompressionPreviewImage from "../pages/apps/imageCompressionPreview/app/screenshot.png";
+import imageSliderImage from "../pages/apps/imageSlider/app/screenshot.png";
 
 const apps = [
     {
@@ -532,6 +533,19 @@ const apps = [
         to: "/apps/image-compression-preview",
         features: ["Local browser encoding", "JPEG and WebP output", "Actual size comparison"],
         action: "Compress an Image",
+    },
+    {
+        number: "39",
+        level: "FOUNDATION",
+        title: "Image Slider",
+        description:
+            "Move through a responsive image collection with captions, slide indicators, keyboard-friendly controls, and optional autoplay.",
+        image: imageSliderImage,
+        imageAlt: "Responsive image slider preview with captions and navigation controls",
+        icon: FiImage,
+        to: "/apps/image-slider",
+        features: ["Previous and next controls", "Selectable slide indicators", "Autoplay with hover and focus pause"],
+        action: "Explore Image Slider",
     },
 ];
 

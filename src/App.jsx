@@ -36,6 +36,7 @@ function App() {
         "/apps/http-status-reference",
         "/apps/icon-library-browser",
         "/apps/image-compression-preview",
+        "/apps/image-slider",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 
