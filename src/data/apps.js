@@ -12,6 +12,7 @@ import basicThemedAppImage from "../pages/apps/basicThemedApp/images/basic-theme
 import blobGeneratorImage from "../pages/apps/blobGenerator/images/blob-generator-preview.png";
 import { carouselSlides } from "../pages/apps/cinematicCarousel/data";
 import clipboardSnippetLibraryImage from "../pages/apps/clipboardSnippetLibrary/images/clipboard-snippet-library-preview.png";
+import codeDiffViewerImage from "../pages/apps/codeDiffViewer/images/code-diff-viewer-preview.png";
 
 const apps = [
     {
@@ -169,6 +170,19 @@ const apps = [
         to: "/apps/clipboard-snippet-library",
         features: ["Browser-local snippets", "Search and categories", "Pin and copy"],
         action: "Open Snippet Library",
+    },
+    {
+        number: "13",
+        level: "UTILITY",
+        title: "Code Diff Viewer",
+        description:
+            "Compare text or code line by line, review additions and removals, ignore whitespace changes, and copy a readable diff summary.",
+        image: codeDiffViewerImage,
+        imageAlt: "Code Diff Viewer comparing original and updated text",
+        icon: FiCode,
+        to: "/apps/code-diff-viewer",
+        features: ["Line-by-line diff", "Whitespace option", "Copyable summary"],
+        action: "Compare Text",
     },
 ];
 

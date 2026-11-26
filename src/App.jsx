@@ -11,6 +11,7 @@ function App() {
     const isStandaloneApp = [
         "/apps/cinematic-carousel-ui",
         "/apps/clipboard-snippet-library",
+        "/apps/code-diff-viewer",
     ].includes(normalizedPathname);
     const RouteContainer = isStandaloneApp ? "div" : "main";
 
