@@ -10,6 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "npx gh-pages -d dist -b gh-pages",
     "lint": "eslint .",
+    "test": "node --test",
     "preview": "vite preview"
   },
   "dependencies": {

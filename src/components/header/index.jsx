@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { FiChevronDown, FiMenu, FiSearch, FiX } from "react-icons/fi";
 import { NavLink, useLocation } from "react-router-dom";
 
+import apps from "../../data/apps";
 import styles from "./style.module.css";
 
 function Header() {
@@ -25,22 +26,10 @@ function Header() {
     const showHome = matchesMenuLink("Home");
     const showAbout = matchesMenuLink("About");
     const showContact = matchesMenuLink("Contact");
-    const showApps =
-        matchesMenuLink("Apps") ||
-        matchesMenuLink("Accordion") ||
-        matchesMenuLink("Accordion Pro") ||
-        matchesMenuLink("Analog Clock") ||
-        matchesMenuLink("Avataar Generator") ||
-        matchesMenuLink("Random Avataars");
-    const showAccordion = matchesMenuLink("Apps") || matchesMenuLink("Accordion");
-    const showAccordionPro =
-        matchesMenuLink("Apps") || matchesMenuLink("Accordion Pro");
-    const showAnalogClock =
-        matchesMenuLink("Apps") || matchesMenuLink("Analog Clock");
-    const showAvataarGenerator =
-        matchesMenuLink("Apps") || matchesMenuLink("Avataar Generator");
-    const showRandomAvataars =
-        matchesMenuLink("Apps") || matchesMenuLink("Random Avataars");
+    const matchingApps = apps.filter((app) => matchesMenuLink(app.title));
+    const showApps = matchesMenuLink("Apps") || matchingApps.length > 0;
+    const visibleApps =
+        normalizedSearchTerm && !matchesMenuLink("Apps") ? matchingApps : apps;
     const menuAppsExpanded = normalizedSearchTerm
         ? showApps
         : isAppsExpanded;
@@ -210,41 +199,16 @@ function Header() {
                                 id="header-app-subroutes"
                                 hidden={!isHeaderAppsOpen}
                             >
-                                <NavLink
-                                    to="/apps/accordion"
-                                    className={styles.dropdownLink}
-                                    onClick={closeHeaderAppsDropdown}
-                                >
-                                    Accordion
-                                </NavLink>
-                                <NavLink
-                                    to="/apps/accordion-pro"
-                                    className={styles.dropdownLink}
-                                    onClick={closeHeaderAppsDropdown}
-                                >
-                                    Accordion Pro
-                                </NavLink>
-                                <NavLink
-                                    to="/apps/analog-clock"
-                                    className={styles.dropdownLink}
-                                    onClick={closeHeaderAppsDropdown}
-                                >
-                                    Analog Clock
-                                </NavLink>
-                                <NavLink
-                                    to="/apps/avataar-generator"
-                                    className={styles.dropdownLink}
-                                    onClick={closeHeaderAppsDropdown}
-                                >
-                                    Avataar Generator
-                                </NavLink>
-                                <NavLink
-                                    to="/apps/random-avataars"
-                                    className={styles.dropdownLink}
-                                    onClick={closeHeaderAppsDropdown}
-                                >
-                                    Random Avataars
-                                </NavLink>
+                                {apps.map((app) => (
+                                    <NavLink
+                                        key={app.to}
+                                        to={app.to}
+                                        className={styles.dropdownLink}
+                                        onClick={closeHeaderAppsDropdown}
+                                    >
+                                        {app.title}
+                                    </NavLink>
+                                ))}
                             </div>
                         </div>
                     </nav>
@@ -359,51 +323,16 @@ function Header() {
                                     id="menu-app-subroutes"
                                     hidden={!menuAppsExpanded}
                                 >
-                                    {showAccordion && (
+                                    {visibleApps.map((app) => (
                                         <NavLink
-                                            to="/apps/accordion"
+                                            key={app.to}
+                                            to={app.to}
                                             className={styles.menuSubLink}
                                             onClick={closeMenu}
                                         >
-                                            Accordion
+                                            {app.title}
                                         </NavLink>
-                                    )}
-                                    {showAccordionPro && (
-                                        <NavLink
-                                            to="/apps/accordion-pro"
-                                            className={styles.menuSubLink}
-                                            onClick={closeMenu}
-                                        >
-                                            Accordion Pro
-                                        </NavLink>
-                                    )}
-                                    {showAnalogClock && (
-                                        <NavLink
-                                            to="/apps/analog-clock"
-                                            className={styles.menuSubLink}
-                                            onClick={closeMenu}
-                                        >
-                                            Analog Clock
-                                        </NavLink>
-                                    )}
-                                    {showAvataarGenerator && (
-                                        <NavLink
-                                            to="/apps/avataar-generator"
-                                            className={styles.menuSubLink}
-                                            onClick={closeMenu}
-                                        >
-                                            Avataar Generator
-                                        </NavLink>
-                                    )}
-                                    {showRandomAvataars && (
-                                        <NavLink
-                                            to="/apps/random-avataars"
-                                            className={styles.menuSubLink}
-                                            onClick={closeMenu}
-                                        >
-                                            Random Avataars
-                                        </NavLink>
-                                    )}
+                                    ))}
                                 </div>
                                 </div>
                             )}

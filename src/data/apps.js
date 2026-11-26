@@ -6,6 +6,7 @@ import analogClockImage from "../pages/apps/analog-clock/images/analog-clock-pre
 import avataarGeneratorImage from "../pages/apps/avataarGenerator/images/avataar-generator-preview.png";
 import randomAvataarsImage from "../pages/apps/randomAvataars/images/random-avataars-preview.png";
 import apiRequestWorkbenchImage from "../pages/apps/apiRequestWorkbench/images/api-request-workbench-preview.png";
+import base64ConverterImage from "../pages/apps/base64Converter/images/base64-converter-preview.png";
 
 const apps = [
     {
@@ -85,6 +86,19 @@ const apps = [
         to: "/apps/api-request-workbench",
         features: ["Five HTTP methods", "Response headers and timing", "Local request history"],
         action: "Try API Request Workbench",
+    },
+    {
+        number: "07",
+        level: "UTILITY",
+        title: "Base64 Converter",
+        description:
+            "Encode or decode UTF-8 text in your browser with URL-safe output and clear validation feedback.",
+        image: base64ConverterImage,
+        imageAlt: "Base64 Converter with text input and encoded output panels",
+        icon: FiCode,
+        to: "/apps/base64-converter",
+        features: ["UTF-8 text conversion", "URL-safe output", "Private in-browser processing"],
+        action: "Try Base64 Converter",
     },
 ];
 

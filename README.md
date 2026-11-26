@@ -10,6 +10,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Avataar Generator — `/apps/avataar-generator`
 - Random Avataars — `/apps/random-avataars`
 - API Request Workbench — `/apps/api-request-workbench`
+- Base64 Converter — `/apps/base64-converter`
 
 ## Run locally
 
@@ -22,5 +23,6 @@ npm run dev
 
 ```bash
 npm run lint
+npm test
 npm run build
 ```
