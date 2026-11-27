@@ -45,6 +45,7 @@ import meditationTimerImage from "../pages/apps/meditationTimer/images/meditatio
 import memesGeneratorImage from "../pages/apps/memesGenerator/images/memes-generator-preview.png";
 import modalPopupImage from "../pages/apps/modalHtmlCssJavascript/images/modal-popup-preview.png";
 import modalPopUpImage from "../pages/apps/modalPopUp/images/modal-pop-up-preview.png";
+import modalProImage from "../pages/apps/modalPro/images/modal-pro-preview.png";
 
 const apps = [
     {
@@ -630,6 +631,19 @@ const apps = [
         to: "/apps/modal-pop-up",
         features: ["Input validation", "Portal-based dialog", "Keyboard focus management"],
         action: "Preview a Message",
+    },
+    {
+        number: "46",
+        level: "ADVANCED",
+        title: "Modal Pro",
+        description:
+            "Explore accessible modal and drawer patterns with nested overlays, confirmation flows, and browser-local profile management.",
+        image: modalProImage,
+        imageAlt: "Modal Pro playground for modal and drawer interaction patterns",
+        icon: FiLayers,
+        to: "/apps/modal-pro",
+        features: ["Nested modal and drawer stack", "Focus and scroll management", "Local profile CRUD and JSON export"],
+        action: "Explore Modal Pro",
     },
 ];
 

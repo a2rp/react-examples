@@ -1,0 +1,71 @@
+.appShell {
+    --bg: #07111f;
+    --card: #0d1a2c;
+    --muted: #99aec4;
+    --text: #edf4ff;
+    --brand: #72c4ff;
+    --brand-2: #ffc66d;
+    --border: rgba(157, 193, 228, 0.2);
+}
+
+.appShell * { box-sizing: border-box; }
+.appShell button, .appShell input { font: inherit; }
+.appShell button, .appShell a { -webkit-tap-highlight-color: transparent; }
+.appShell button:focus-visible, .appShell a:focus-visible, .appShell input:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+.appShell button { border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; color: #fff; background: rgba(255, 255, 255, 0.06); cursor: pointer; transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease; }
+.appShell button:hover { border-color: var(--brand); background: rgba(114, 196, 255, 0.1); box-shadow: 0 0 16px rgba(114, 196, 255, 0.12); }
+.appShell button:disabled { cursor: not-allowed; opacity: 0.55; }
+.appShell button:disabled:hover { box-shadow: none; }
+.appShell { min-height: 100vh; overflow: hidden; background: radial-gradient(1100px 560px at 20% -10%, #172a42, transparent), var(--bg); }
+.appShell .siteHeader { position: fixed; inset: 0 0 auto; z-index: 40; display: flex; align-items: center; justify-content: space-between; min-height: 74px; padding: 0 clamp(1rem, 5vw, 5rem); border-bottom: 1px solid var(--border); background: rgba(7, 17, 31, 0.9); backdrop-filter: blur(16px); }
+.appShell .siteBrand { display: inline-flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; }.appShell .siteBrand img { width: 42px; height: 42px; padding: 5px; border: 1px solid #315274; border-radius: 12px; background: #10243b; object-fit: contain; }.appShell .siteBrand span { display: grid; gap: 2px; }.appShell .siteBrand small { color: var(--brand); font-size: 9px; font-weight: 800; letter-spacing: 0.15em; }.appShell .siteBrand strong { font-size: 16px; }
+.appShell .siteNav { display: flex; gap: 24px; margin-left: auto; margin-right: 16px; }.appShell .siteNav a { color: var(--muted); font-size: 14px; text-decoration: none; transition: color 180ms ease, text-shadow 180ms ease; }.appShell .siteNav a:hover { color: #fff; text-shadow: 0 0 14px rgba(114, 196, 255, 0.35); }.appShell .menuButton { display: none; width: 40px; height: 40px; place-items: center; padding: 0; }.appShell .menuButton svg { width: 19px; height: 19px; }
+.appShell .siteMain { padding-top: 74px; }.appShell .eyebrow, .appShell .aboutKicker { color: var(--brand); font-size: 11px; font-weight: 800; letter-spacing: 0.16em; }.appShell .panelHeader { display: flex; justify-content: space-between; gap: 18px; }.appShell .panelActions, .appShell .drawerActions, .appShell .formActions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }.appShell .formFields { display: grid; gap: 12px; margin-top: 10px; }.appShell .field { display: grid; gap: 6px; color: var(--muted); font-size: 13px; }.appShell .field input { width: 100%; padding: 11px 12px; border: 1px solid var(--border); border-radius: 10px; outline: none; color: #fff; background: rgba(255, 255, 255, 0.04); }.appShell .field input:focus { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(114, 196, 255, 0.12); }.appShell .tableWrap { overflow-x: auto; }.appShell .table { width: 100%; min-width: 680px; margin-top: 18px; border: 1px solid var(--border); border-collapse: separate; border-spacing: 0; border-radius: 14px; overflow: hidden; }.appShell .table th, .appShell .table td { padding: 12px 14px; border-bottom: 1px solid var(--border); text-align: left; }.appShell .table th { color: var(--muted); background: rgba(255, 255, 255, 0.04); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }.appShell .table tr:last-child td { border-bottom: 0; }.appShell .actions { display: flex; flex-wrap: wrap; gap: 8px; }.appShell .actions button:first-child { color: #ffb4b4; border-color: rgba(255, 120, 120, 0.32); }.appShell .badge { display: inline-block; padding: 5px 9px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); background: rgba(255, 255, 255, 0.06); font-size: 12px; }.appShell .separator { color: var(--brand-2); }.appShell .overlayCenter { display: grid; min-height: 100vh; place-items: center; padding: 16px; }.appShell .dialogHeader { display: flex; align-items: center; justify-content: space-between; gap: 12px; }.appShell .dialogHeader h3 { margin: 0; font-size: 20px; }.appShell .dialogHeader button { display: grid; width: 36px; height: 36px; place-items: center; padding: 0; }.appShell .dialogHeader button svg { width: 17px; }.appShell .dialogBody { margin-top: 16px; color: var(--muted); }.appShell .dialogFooter { display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; }.appShell .dialogFooter button:last-child, .appShell .formActions button:last-child { color: #07111f; border-color: var(--brand); background: var(--brand); }.appShell .dialogFooter button:last-child:hover, .appShell .formActions button:last-child:hover { color: #07111f; background: #a5ddff; }.appShell .footerIntro, .appShell .footerColumns, .appShell .footerBottom { width: min(1120px, 94vw); margin: 0 auto; }.appShell .siteFooter { padding: 68px 0 20px; border-top: 1px solid var(--border); background: #06101c; }.appShell .footerIntro h2 { max-width: 580px; margin: 10px 0 0; font-size: clamp(2rem, 5vw, 4.2rem); line-height: 1; letter-spacing: -0.06em; }.appShell .footerColumns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 42px; }.appShell .footerLabel { display: block; margin-bottom: 10px; color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; }.appShell .footerLinks { display: flex; flex-wrap: wrap; gap: 8px; }.appShell .footerLinks a { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid var(--border); border-radius: 10px; color: #bcd1e5; transition: border-color 180ms ease, box-shadow 180ms ease, color 180ms ease; }.appShell .footerLinks a:hover { color: #fff; border-color: var(--brand); box-shadow: 0 0 16px rgba(114, 196, 255, 0.16); }.appShell .footerLinks svg { width: 17px; }.appShell .footerBottom { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 50px; padding-top: 16px; border-top: 1px solid var(--border); color: #8298b0; font-size: 12px; }.appShell .footerBottom a { color: #fff; font-weight: 800; text-decoration: none; }.appShell .footerBottom button { display: grid; width: 38px; height: 38px; place-items: center; padding: 0; }.appShell .footerBottom svg { width: 16px; }
+@media (max-width: 720px) { .appShell .siteNav { position: absolute; top: calc(100% + 8px); right: 16px; display: none; min-width: 160px; margin: 0; padding: 6px; border: 1px solid var(--border); border-radius: 14px; background: var(--card); box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35); }.appShell .siteNavOpen { display: grid; }.appShell .siteNav a { padding: 10px; border-radius: 8px; }.appShell .siteNav a:hover { background: rgba(114, 196, 255, 0.1); }.appShell .menuButton { display: grid; }.appShell .panelHeader { flex-direction: column; }.appShell .panelActions { justify-content: flex-start; } }
+@media (max-width: 560px) { .appShell .footerColumns { grid-template-columns: 1fr; }.appShell .footerBottom { align-items: flex-start; flex-direction: column; }.appShell .siteFooter { padding-top: 50px; } }
+
+@media (prefers-reduced-motion: reduce) {
+    .appShell *, .appShell *::before, .appShell *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+[data-modalpro-overlay] {
+    --bg: #07111f;
+    --card: #0d1a2c;
+    --muted: #99aec4;
+    --text: #edf4ff;
+    --brand: #72c4ff;
+    --brand-2: #ffc66d;
+    --border: rgba(157, 193, 228, 0.2);
+    color: var(--text);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+[data-modalpro-overlay] button,
+[data-modalpro-overlay] input { font: inherit; }
+[data-modalpro-overlay] button { border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; color: #fff; background: rgba(255, 255, 255, .06); cursor: pointer; transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease; }
+[data-modalpro-overlay] button:hover { border-color: var(--brand); background: rgba(114, 196, 255, .1); box-shadow: 0 0 16px rgba(114, 196, 255, .12); }
+[data-modalpro-overlay] button:focus-visible,
+[data-modalpro-overlay] a:focus-visible,
+[data-modalpro-overlay] input:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+[data-modalpro-overlay] .overlayCenter { display: grid; min-height: 100vh; place-items: center; padding: 16px; }
+[data-modalpro-overlay] .dialogHeader { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+[data-modalpro-overlay] .dialogHeader h3 { margin: 0; font-size: 20px; }
+[data-modalpro-overlay] .dialogHeader button { display: grid; width: 36px; height: 36px; place-items: center; padding: 0; }
+[data-modalpro-overlay] .dialogHeader button svg { width: 17px; }
+[data-modalpro-overlay] .dialogBody { margin-top: 16px; color: var(--muted); }
+[data-modalpro-overlay] .dialogFooter { display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; }
+[data-modalpro-overlay] .dialogFooter button:last-child,
+[data-modalpro-overlay] .formActions button:last-child { color: #07111f; border-color: var(--brand); background: var(--brand); }
+[data-modalpro-overlay] .dialogFooter button:last-child:hover,
+[data-modalpro-overlay] .formActions button:last-child:hover { color: #07111f; background: #a5ddff; }
+[data-modalpro-overlay] .formFields { display: grid; gap: 12px; margin-top: 10px; }
+[data-modalpro-overlay] .field { display: grid; gap: 6px; color: var(--muted); font-size: 13px; }
+[data-modalpro-overlay] .field input { width: 100%; padding: 11px 12px; border: 1px solid var(--border); border-radius: 10px; outline: none; color: #fff; background: rgba(255, 255, 255, .04); }
+[data-modalpro-overlay] .field input:focus { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(114, 196, 255, .12); }
+[data-modalpro-overlay] .formActions,
+[data-modalpro-overlay] .drawerActions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+[data-modalpro-overlay] .badge { display: inline-block; padding: 5px 9px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); background: rgba(255, 255, 255, .06); font-size: 12px; }

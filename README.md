@@ -45,6 +45,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Meme Generator - `/apps/memes-generator`
 - Subscription Modal - `/apps/modal-popup`
 - Message Preview Modal - `/apps/modal-pop-up`
+- Modal Pro - `/apps/modal-pro`
 
 ## Run locally
 

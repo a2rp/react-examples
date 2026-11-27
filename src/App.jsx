@@ -37,6 +37,7 @@ function App() {
         "/apps/memes-generator",
         "/apps/modal-popup",
         "/apps/modal-pop-up",
+        "/apps/modal-pro",
         "/apps/html-colors",
         "/apps/http-status-reference",
         "/apps/icon-library-browser",
