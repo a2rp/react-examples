@@ -1,4 +1,4 @@
-import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiHardDrive, FiImage, FiLayers, FiPercent, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
+import { FiBookOpen, FiCalendar, FiChevronDown, FiClipboard, FiClock, FiCode, FiDroplet, FiEye, FiFilm, FiHardDrive, FiImage, FiLayers, FiMessageSquare, FiPercent, FiRefreshCw, FiSmile, FiSun, FiZap } from "react-icons/fi";
 
 import accordionImage from "../pages/apps/accordion/images/accordion-hero.jpg";
 import accordionProImage from "../pages/apps/accordion-pro/images/accordion-hero.jpg";
@@ -44,6 +44,7 @@ import jsxVsJsImage from "../pages/apps/jsxVsJs/app/screenshot.png";
 import meditationTimerImage from "../pages/apps/meditationTimer/images/meditation-timer-preview.png";
 import memesGeneratorImage from "../pages/apps/memesGenerator/images/memes-generator-preview.png";
 import modalPopupImage from "../pages/apps/modalHtmlCssJavascript/images/modal-popup-preview.png";
+import modalPopUpImage from "../pages/apps/modalPopUp/images/modal-pop-up-preview.png";
 
 const apps = [
     {
@@ -607,7 +608,7 @@ const apps = [
     {
         number: "44",
         level: "FOUNDATION",
-        title: "Modal Popup",
+        title: "Subscription Modal",
         description:
             "Explore an accessible subscription modal with keyboard focus control, responsive styling, and a local-only form demo.",
         image: modalPopupImage,
@@ -616,6 +617,19 @@ const apps = [
         to: "/apps/modal-popup",
         features: ["Keyboard focus trap", "Escape and backdrop close", "Local-only form validation"],
         action: "Open Modal Demo",
+    },
+    {
+        number: "45",
+        level: "FOUNDATION",
+        title: "Message Preview Modal",
+        description:
+            "Enter a short message and preview it in an accessible, responsive React dialog that keeps the content in your browser.",
+        image: modalPopUpImage,
+        imageAlt: "Message Preview Modal React component demonstration",
+        icon: FiMessageSquare,
+        to: "/apps/modal-pop-up",
+        features: ["Input validation", "Portal-based dialog", "Keyboard focus management"],
+        action: "Preview a Message",
     },
 ];
 

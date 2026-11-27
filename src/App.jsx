@@ -36,6 +36,7 @@ function App() {
         "/apps/meditation-timer",
         "/apps/memes-generator",
         "/apps/modal-popup",
+        "/apps/modal-pop-up",
         "/apps/html-colors",
         "/apps/http-status-reference",
         "/apps/icon-library-browser",
