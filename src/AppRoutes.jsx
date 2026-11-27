@@ -12,6 +12,7 @@ const DigitalClockPage = lazy(() => import("./pages/apps/digitalClock/index.jsx"
 const HelloReactPage = lazy(() => import("./pages/apps/helloReact/index.jsx"));
 const HelloReactCounterPage = lazy(() => import("./pages/apps/helloReactCounter/index.jsx"));
 const HelloWorldReactPage = lazy(() => import("./pages/apps/helloWorldReact/index.jsx"));
+const JsxVsJsPage = lazy(() => import("./pages/apps/jsxVsJs/index.jsx"));
 const HtmlColorsPage = lazy(() => import("./pages/apps/htmlColors/app/src/App.jsx"));
 const HttpStatusReferencePage = lazy(() => import("./pages/apps/httpStatusReference/index.jsx"));
 const IconLibraryBrowserPage = lazy(() => import("./pages/apps/iconLibraryBrowser/index.jsx"));
@@ -64,6 +65,7 @@ function AppRoutes() {
                     <Route path="hello-react" element={<HelloReactPage />} />
                     <Route path="hello-react-counter" element={<HelloReactCounterPage />} />
                     <Route path="hello-world-react" element={<HelloWorldReactPage />} />
+                    <Route path="jsx-vs-js" element={<JsxVsJsPage />} />
                     <Route path="html-colors" element={<HtmlColorsPage />} />
                     <Route path="http-status-reference" element={<HttpStatusReferencePage />} />
                     <Route path="icon-library-browser" element={<IconLibraryBrowserPage />} />

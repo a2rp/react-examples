@@ -39,6 +39,7 @@ import httpStatusReferenceImage from "../pages/apps/httpStatusReference/app/scre
 import iconLibraryBrowserImage from "../pages/apps/iconLibraryBrowser/app/screenshot.png";
 import imageCompressionPreviewImage from "../pages/apps/imageCompressionPreview/app/screenshot.png";
 import imageSliderImage from "../pages/apps/imageSlider/app/screenshot.png";
+import jsxVsJsImage from "../pages/apps/jsxVsJs/app/screenshot.png";
 
 const apps = [
     {
@@ -546,6 +547,19 @@ const apps = [
         to: "/apps/image-slider",
         features: ["Previous and next controls", "Selectable slide indicators", "Autoplay with hover and focus pause"],
         action: "Explore Image Slider",
+    },
+    {
+        number: "40",
+        level: "FOUNDATION",
+        title: "JSX vs JS",
+        description:
+            "Compare the same interactive React counter written with JSX and React.createElement, using shared state.",
+        image: jsxVsJsImage,
+        imageAlt: "JSX vs JS comparison showing equivalent React counter implementations",
+        icon: FiCode,
+        to: "/apps/jsx-vs-js",
+        features: ["Side-by-side examples", "Shared counter state", "Increment and reset controls"],
+        action: "Compare JSX and JS",
     },
 ];
 

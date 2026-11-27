@@ -32,6 +32,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Git Command Explorer - `/apps/git-command-explorer`
 - Hello React Counter - `/apps/hello-react-counter`
 - Hello World React - `/apps/hello-world-react`
+- JSX vs JS - `/apps/jsx-vs-js`
 - HTML Colors - `/apps/html-colors`
 - HTTP Status Reference - `/apps/http-status-reference`
 - Icon Library Browser - `/apps/icon-library-browser`
