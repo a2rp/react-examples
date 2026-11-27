@@ -32,6 +32,7 @@ function App() {
         "/apps/git-command-explorer",
         "/apps/hello-react-counter",
         "/apps/hello-world-react",
+        "/apps/light-dark-theme-toggle",
         "/apps/html-colors",
         "/apps/http-status-reference",
         "/apps/icon-library-browser",

@@ -10,6 +10,7 @@ import apiRequestWorkbenchImage from "../pages/apps/apiRequestWorkbench/images/a
 import base64ConverterImage from "../pages/apps/base64Converter/images/base64-converter-preview.png";
 import helloReactImage from "../pages/apps/helloReact/images/hello-react-preview.png";
 import basicThemedAppImage from "../pages/apps/basicThemedApp/images/basic-themed-app-preview.png";
+import lightDarkThemeToggleImage from "../pages/apps/lightDarkThemeToggle/images/screenshot.png";
 import blobGeneratorImage from "../pages/apps/blobGenerator/images/blob-generator-preview.png";
 import { carouselSlides } from "../pages/apps/cinematicCarousel/data";
 import clipboardSnippetLibraryImage from "../pages/apps/clipboardSnippetLibrary/images/clipboard-snippet-library-preview.png";
@@ -560,6 +561,19 @@ const apps = [
         to: "/apps/jsx-vs-js",
         features: ["Side-by-side examples", "Shared counter state", "Increment and reset controls"],
         action: "Compare JSX and JS",
+    },
+    {
+        number: "41",
+        level: "FOUNDATION",
+        title: "Light Dark Theme Toggle",
+        description:
+            "Switch between light and dark themes, save the choice in browser storage, and explore the accessible React interface.",
+        image: lightDarkThemeToggleImage,
+        imageAlt: "Light Dark Theme Toggle app preview with theme controls",
+        icon: FiSun,
+        to: "/apps/light-dark-theme-toggle",
+        features: ["Light and dark themes", "Saved browser preference", "Accessible theme control"],
+        action: "Try Theme Toggle",
     },
 ];
 

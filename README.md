@@ -40,6 +40,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Image Slider - `/apps/image-slider`
 
 - Digital Clock - `/apps/digital-clock`
+- Light Dark Theme Toggle - `/apps/light-dark-theme-toggle`
 
 ## Run locally
 
