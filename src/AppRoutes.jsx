@@ -51,6 +51,7 @@ const FileSizeVisualizerPage = lazy(() => import("./pages/apps/fileSizeVisualize
 const FlashcardStudyToolPage = lazy(() => import("./pages/apps/flashcardStudyTool/index.jsx"));
 const FontPairStudioPage = lazy(() => import("./pages/apps/fontPairStudio/index.jsx"));
 const GitCommandExplorerPage = lazy(() => import("./pages/apps/gitCommandExplorer/index.jsx"));
+const MouseTrailerPage = lazy(() => import("./pages/apps/mouseTrailer/index.jsx"));
 const AboutPage = lazy(() => import("./pages/about"));
 const ContactPage = lazy(() => import("./pages/contact"));
 const NotFoundPage = lazy(() => import("./pages/not-found"));
@@ -110,6 +111,7 @@ function AppRoutes() {
                     <Route path="flashcard-study-tool" element={<FlashcardStudyToolPage />} />
                     <Route path="fontpair-studio" element={<FontPairStudioPage />} />
                     <Route path="git-command-explorer" element={<GitCommandExplorerPage />} />
+                    <Route path="mouse-trailer" element={<MouseTrailerPage />} />
                 </Route>
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

@@ -46,6 +46,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Subscription Modal - `/apps/modal-popup`
 - Message Preview Modal - `/apps/modal-pop-up`
 - Modal Pro - `/apps/modal-pro`
+- Mouse Trailer - `/apps/mouse-trailer`
 
 ## Run locally
 

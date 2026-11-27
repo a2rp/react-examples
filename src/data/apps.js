@@ -46,6 +46,7 @@ import memesGeneratorImage from "../pages/apps/memesGenerator/images/memes-gener
 import modalPopupImage from "../pages/apps/modalHtmlCssJavascript/images/modal-popup-preview.png";
 import modalPopUpImage from "../pages/apps/modalPopUp/images/modal-pop-up-preview.png";
 import modalProImage from "../pages/apps/modalPro/images/modal-pro-preview.png";
+import mouseTrailerImage from "../pages/apps/mouseTrailer/source/screenshot.png";
 
 const apps = [
     {
@@ -644,6 +645,19 @@ const apps = [
         to: "/apps/modal-pro",
         features: ["Nested modal and drawer stack", "Focus and scroll management", "Local profile CRUD and JSON export"],
         action: "Explore Modal Pro",
+    },
+    {
+        number: "47",
+        level: "CREATIVE",
+        title: "Mouse Trailer",
+        description:
+            "A cursor-following interaction demo with contextual hover labels, responsive image cards, and reduced-motion support.",
+        image: mouseTrailerImage,
+        imageAlt: "Mouse Trailer demo with a responsive image gallery and custom pointer cue",
+        icon: FiEye,
+        to: "/apps/mouse-trailer",
+        features: ["Cursor-following trailer", "Context labels on hover", "Touch and reduced-motion support"],
+        action: "Try Mouse Trailer",
     },
 ];
 

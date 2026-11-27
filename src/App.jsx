@@ -38,6 +38,7 @@ function App() {
         "/apps/modal-popup",
         "/apps/modal-pop-up",
         "/apps/modal-pro",
+        "/apps/mouse-trailer",
         "/apps/html-colors",
         "/apps/http-status-reference",
         "/apps/icon-library-browser",

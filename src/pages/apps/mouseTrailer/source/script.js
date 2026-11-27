@@ -1,0 +1,78 @@
+const trailer = document.querySelector(".trailer");
+const trailerLabel = document.querySelector(".trailerLabel");
+const menuButton = document.querySelector(".menuButton");
+const siteNav = document.querySelector(".siteNav");
+const year = document.querySelector("#currentYear");
+let animationFrame = null;
+let cursorX = 0;
+let cursorY = 0;
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+const moveTrailer = () => {
+    trailer.style.transform = `translate3d(${cursorX - trailer.offsetWidth / 2}px, ${cursorY - trailer.offsetHeight / 2}px, 0)`;
+    animationFrame = null;
+};
+
+window.addEventListener("pointermove", (event) => {
+    if (event.pointerType === "touch") return;
+    cursorX = event.clientX;
+    cursorY = event.clientY;
+    if (!animationFrame) animationFrame = requestAnimationFrame(moveTrailer);
+});
+
+document.querySelectorAll("[data-trailer-label]").forEach((target) => {
+    target.addEventListener("pointerenter", () => {
+        trailerLabel.textContent = target.dataset.trailerLabel;
+        trailer.classList.add("isActive");
+    });
+    target.addEventListener("pointerleave", () => {
+        trailerLabel.textContent = "";
+        trailer.classList.remove("isActive");
+    });
+});
+
+menuButton.addEventListener("click", () => {
+    const isOpen = siteNav.classList.toggle("isOpen");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+});
+
+const closeMenu = () => {
+    siteNav.classList.remove("isOpen");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Open menu");
+};
+
+document.addEventListener("click", (event) => {
+    if (!siteNav.contains(event.target) && !menuButton.contains(event.target)) {
+        closeMenu();
+    }
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && siteNav.classList.contains("isOpen")) {
+        closeMenu();
+        menuButton.focus();
+    }
+});
+
+siteNav.querySelectorAll("a").forEach((link) =>
+    link.addEventListener("click", closeMenu),
+);
+
+year.textContent = new Date().getFullYear();
+const goTopButton = document.querySelector(".goTopButton");
+
+const updateGoTopButton = () => {
+    goTopButton.hidden = window.scrollY <= 420;
+};
+
+goTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: reducedMotion.matches ? "auto" : "smooth",
+    });
+});
+
+window.addEventListener("scroll", updateGoTopButton, { passive: true });
+updateGoTopButton();
