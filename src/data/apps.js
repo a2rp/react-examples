@@ -41,6 +41,7 @@ import iconLibraryBrowserImage from "../pages/apps/iconLibraryBrowser/app/screen
 import imageCompressionPreviewImage from "../pages/apps/imageCompressionPreview/app/screenshot.png";
 import imageSliderImage from "../pages/apps/imageSlider/app/screenshot.png";
 import jsxVsJsImage from "../pages/apps/jsxVsJs/app/screenshot.png";
+import meditationTimerImage from "../pages/apps/meditationTimer/images/meditation-timer-preview.png";
 
 const apps = [
     {
@@ -574,6 +575,19 @@ const apps = [
         to: "/apps/light-dark-theme-toggle",
         features: ["Light and dark themes", "Saved browser preference", "Accessible theme control"],
         action: "Try Theme Toggle",
+    },
+    {
+        number: "42",
+        level: "UTILITY",
+        title: "Meditation Timer",
+        description:
+            "Set a short breathing session, follow a gentle rhythm, and review your private practice history.",
+        image: meditationTimerImage,
+        imageAlt: "Quiet Hours Meditation Timer with a session timer and practice log",
+        icon: FiClock,
+        to: "/apps/meditation-timer",
+        features: ["3 to 20 minute sessions", "Guided breathing rhythms", "Private local practice log"],
+        action: "Start a Quiet Session",
     },
 ];
 

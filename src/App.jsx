@@ -33,6 +33,7 @@ function App() {
         "/apps/hello-react-counter",
         "/apps/hello-world-react",
         "/apps/light-dark-theme-toggle",
+        "/apps/meditation-timer",
         "/apps/html-colors",
         "/apps/http-status-reference",
         "/apps/icon-library-browser",
