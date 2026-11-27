@@ -1,0 +1,38 @@
+.container { background: #edf3fa; padding: 0 clamp(1rem, 4vw, 2rem) 2rem; }
+.main { margin: 0 auto; max-width: 1180px; }
+.formCard { background: #fff; border: 1px solid #d9e2ef; border-radius: 20px; box-shadow: 0 16px 36px rgba(46, 70, 106, 0.08); padding: clamp(1.2rem, 3vw, 2rem); }
+.cardHeading, .outputHeader, .cardFooter { align-items: center; display: flex; justify-content: space-between; }
+.cardHeading { color: #4764a3; }
+.cardHeading h2, .outputHeader h2 { color: #19283e; font-size: clamp(1.45rem, 3vw, 2.2rem); letter-spacing: -0.04em; margin: 0.3rem 0 0; }
+.eyebrow { color: #4764a3; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em; margin: 0; text-transform: uppercase; }
+.form { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr 170px; margin-top: 1.5rem; }
+.field { display: grid; gap: 0.45rem; color: #33445f; font-size: 0.82rem; font-weight: 650; }
+.field input { background: #fff; border: 1px solid #cad7e8; border-radius: 8px; color: #19283e; font: inherit; min-height: 56px; padding: 0.75rem 0.85rem; width: 100%; }
+.field input:focus-visible { border-color: #4764a3; outline: 3px solid rgba(71, 100, 163, 0.2); outline-offset: 1px; }
+.submitButton { align-items: center; align-self: stretch; background: #213e78; border: 0; border-radius: 8px; color: #fff; cursor: pointer; display: inline-flex; font: inherit; font-weight: 700; gap: 0.55rem; justify-content: center; min-height: 56px; padding: 0.75rem; transition: box-shadow 180ms ease, background 180ms ease; }
+.submitButton:disabled { cursor: wait; opacity: 0.8; }
+.spinner { animation: spin 800ms linear infinite; border: 2px solid rgba(255,255,255,0.35); border-radius: 50%; border-top-color: #fff; height: 18px; width: 18px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.submitButton:hover { box-shadow: 0 8px 18px rgba(33, 62, 120, 0.2); text-shadow: 0 1px 8px rgba(255, 255, 255, 0.25); }
+.helperText { color: #718097; font-size: 0.82rem; margin: 1rem 0 0; }
+.outputHeader { margin: 4.5rem 0 1.5rem; }
+.outputHeader > span { background: #fff; border: 1px solid #d9e2ef; border-radius: 999px; color: #65758d; font-size: 0.8rem; padding: 0.55rem 0.8rem; }
+.outputContainer { display: grid; gap: 1.25rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.memeCard { background: #fff; border: 1px solid #d9e2ef; border-radius: 16px; overflow: hidden; transition: border-color 180ms ease, box-shadow 180ms ease, text-shadow 180ms ease; }
+.memeCard:hover { border-color: #7899d5; box-shadow: 0 14px 28px rgba(59, 89, 143, 0.13); }
+.memeVisual { background: #14243c; min-height: 230px; overflow: hidden; position: relative; }
+.memeImage { display: block; height: 100%; min-height: 230px; object-fit: cover; width: 100%; }
+.memeTopText, .memeBottomText { background: rgba(8, 18, 33, 0.75); color: #fff; font-size: clamp(1rem, 2vw, 1.45rem); font-weight: 800; left: 0; line-height: 1.2; min-height: 2.4rem; padding: 0.55rem 0.7rem; position: absolute; text-align: center; text-shadow: 1px 1px 0 #000; width: 100%; word-break: break-word; }
+.memeTopText { top: 0; }
+.memeBottomText { bottom: 0; }
+.cardFooter { gap: 0.8rem; padding: 0.85rem 1rem; }
+.cardFooter > span { color: #4c5f78; font-size: 0.85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.saveButton { align-items: center; background: #fff; border: 1px solid #9eb4dd; border-radius: 8px; color: #2b4e96; cursor: pointer; display: inline-flex; flex: 0 0 auto; font: inherit; gap: 0.4rem; padding: 0.45rem 0.7rem; }
+.saveButton:hover { background: #f0f5ff; }
+.saveButton svg { height: 1rem; width: 1rem; }
+.emptyState { align-items: center; background: #fff; border: 1px dashed #b9c9df; border-radius: 16px; color: #718097; display: flex; flex-direction: column; justify-content: center; min-height: 260px; padding: 2rem; text-align: center; }
+.emptyState svg { color: #4764a3; font-size: 2rem; margin-bottom: 0.7rem; }
+.emptyState h3 { color: #19283e; margin: 0 0 0.4rem; }
+.emptyState p { margin: 0; }
+@media (max-width: 900px) { .form { grid-template-columns: 1fr 1fr; } .submitButton { grid-column: 1 / -1; } .outputContainer { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .form { grid-template-columns: 1fr; } .submitButton { grid-column: auto; } .outputContainer { grid-template-columns: 1fr; } .outputHeader { align-items: flex-start; flex-direction: column; gap: 0.8rem; } }

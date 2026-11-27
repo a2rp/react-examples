@@ -42,6 +42,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Digital Clock - `/apps/digital-clock`
 - Light Dark Theme Toggle - `/apps/light-dark-theme-toggle`
 - Meditation Timer - `/apps/meditation-timer`
+- Meme Generator - `/apps/memes-generator`
 
 ## Run locally
 

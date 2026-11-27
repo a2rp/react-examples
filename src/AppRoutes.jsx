@@ -21,6 +21,7 @@ const ImageSliderPage = lazy(() => import("./pages/apps/imageSlider/index.jsx"))
 const BasicThemedAppPage = lazy(() => import("./pages/apps/basicThemedApp/index.jsx"));
 const LightDarkThemeTogglePage = lazy(() => import("./pages/apps/lightDarkThemeToggle/index.jsx"));
 const MeditationTimerPage = lazy(() => import("./pages/apps/meditationTimer/index.jsx"));
+const MemesGeneratorPage = lazy(() => import("./pages/apps/memesGenerator/index.jsx"));
 const AvataarGeneratorPage = lazy(() => import("./pages/apps/avataarGenerator/index.jsx"));
 const RandomAvataarsPage = lazy(() => import("./pages/apps/randomAvataars/index.jsx"));
 const ApiRequestWorkbenchPage = lazy(() => import("./pages/apps/apiRequestWorkbench/index.jsx"));
@@ -76,6 +77,7 @@ function AppRoutes() {
                     <Route path="basic-themed-app" element={<BasicThemedAppPage />} />
                     <Route path="light-dark-theme-toggle" element={<LightDarkThemeTogglePage />} />
                     <Route path="meditation-timer" element={<MeditationTimerPage />} />
+                    <Route path="memes-generator" element={<MemesGeneratorPage />} />
                     <Route path="avataar-generator" element={<AvataarGeneratorPage />} />
                     <Route path="random-avataars" element={<RandomAvataarsPage />} />
                     <Route path="api-request-workbench" element={<ApiRequestWorkbenchPage />} />

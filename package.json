@@ -46,6 +46,7 @@
     "@dicebear/shapes": "^9.4.2",
     "@dicebear/thumbs": "^9.4.2",
     "@dicebear/toon-head": "^9.4.2",
+    "html-to-image": "^1.11.11",
     "react": "^19.3.1",
     "react-copy-to-clipboard": "^5.1.1",
     "react-dom": "^19.3.1",

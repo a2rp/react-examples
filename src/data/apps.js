@@ -42,6 +42,7 @@ import imageCompressionPreviewImage from "../pages/apps/imageCompressionPreview/
 import imageSliderImage from "../pages/apps/imageSlider/app/screenshot.png";
 import jsxVsJsImage from "../pages/apps/jsxVsJs/app/screenshot.png";
 import meditationTimerImage from "../pages/apps/meditationTimer/images/meditation-timer-preview.png";
+import memesGeneratorImage from "../pages/apps/memesGenerator/images/memes-generator-preview.png";
 
 const apps = [
     {
@@ -588,6 +589,19 @@ const apps = [
         to: "/apps/meditation-timer",
         features: ["3 to 20 minute sessions", "Guided breathing rhythms", "Private local practice log"],
         action: "Start a Quiet Session",
+    },
+    {
+        number: "43",
+        level: "CREATIVE",
+        title: "Meme Generator",
+        description:
+            "Browse public Imgflip templates, add top and bottom captions, and download your meme as a PNG.",
+        image: memesGeneratorImage,
+        imageAlt: "Meme Generator with caption controls and a grid of meme templates",
+        icon: FiImage,
+        to: "/apps/memes-generator",
+        features: ["Live public templates", "Captions stay in your browser", "PNG downloads"],
+        action: "Create a Meme",
     },
 ];
 
