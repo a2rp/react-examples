@@ -43,6 +43,7 @@ A collection of focused, interactive React projects. Each app has its own route 
 - Light Dark Theme Toggle - `/apps/light-dark-theme-toggle`
 - Meditation Timer - `/apps/meditation-timer`
 - Meme Generator - `/apps/memes-generator`
+- Modal Popup - `/apps/modal-popup`
 
 ## Run locally
 

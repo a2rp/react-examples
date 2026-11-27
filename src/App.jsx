@@ -35,6 +35,7 @@ function App() {
         "/apps/light-dark-theme-toggle",
         "/apps/meditation-timer",
         "/apps/memes-generator",
+        "/apps/modal-popup",
         "/apps/html-colors",
         "/apps/http-status-reference",
         "/apps/icon-library-browser",

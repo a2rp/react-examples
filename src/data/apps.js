@@ -43,6 +43,7 @@ import imageSliderImage from "../pages/apps/imageSlider/app/screenshot.png";
 import jsxVsJsImage from "../pages/apps/jsxVsJs/app/screenshot.png";
 import meditationTimerImage from "../pages/apps/meditationTimer/images/meditation-timer-preview.png";
 import memesGeneratorImage from "../pages/apps/memesGenerator/images/memes-generator-preview.png";
+import modalPopupImage from "../pages/apps/modalHtmlCssJavascript/images/modal-popup-preview.png";
 
 const apps = [
     {
@@ -602,6 +603,19 @@ const apps = [
         to: "/apps/memes-generator",
         features: ["Live public templates", "Captions stay in your browser", "PNG downloads"],
         action: "Create a Meme",
+    },
+    {
+        number: "44",
+        level: "FOUNDATION",
+        title: "Modal Popup",
+        description:
+            "Explore an accessible subscription modal with keyboard focus control, responsive styling, and a local-only form demo.",
+        image: modalPopupImage,
+        imageAlt: "Modal Studio subscription form demo with a blurred dark background",
+        icon: FiLayers,
+        to: "/apps/modal-popup",
+        features: ["Keyboard focus trap", "Escape and backdrop close", "Local-only form validation"],
+        action: "Open Modal Demo",
     },
 ];
 
